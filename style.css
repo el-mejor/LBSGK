@@ -1,0 +1,319 @@
+/*
+This file is part of the LBSGK Template
+
+Copyright (c) 2017 Lars Becker (lars@lars-b.net)
+*/
+
+body {	
+	font-family: 			"Montserrat";
+	font-size:			90%;	
+	min-height:			100vh;
+}
+
+.topbox {display:none;}
+
+.mainframe {
+	margin:				auto;
+	padding:			0px;
+	/*background:			linear-gradient(white, white);*/
+	min-width:			950px;
+	max-width:			1280px; /* increase if there'S a suitable main banner image but not larger than 1280 */
+	width:				80vw;	
+	/*max-height:			100px;	*/
+	border-radius:			10px 10px;
+	box-shadow:			0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mainbanner {		
+	position:			relative;
+	float:				top;
+	width:				100%;
+	height:				200px;
+	overflow: 			hidden;
+	margin:				0px;
+	border-radius:			10px 10px 0 0;
+	box-shadow:			0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mainbannerbackimg {
+	zoom:				2;
+	border:				0;
+	border-radius:			5px 5px 0 0;
+	margin:				0;
+	max-width:			1280px;	
+	width:				100%;
+	/*max-height:			100%;*/
+	height:				auto;
+	box-shadow:			none;
+}
+.mainbannerbackimg:hover {
+	transform:	scale(1.0);
+}
+
+.mainbannerlogo {
+	width:				100px;
+	height:				auto;
+	margin:				10px;
+	border-radius:			1px 1px;
+	box-shadow:			none;
+}
+
+.mainbannerprev {
+	width:				75px;
+	height:				auto;
+	margin-left			10px;	
+	border-radius:			3px 3px;
+	box-shadow:			0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.mainbannerprev:hover{
+	transform:	scale(1.5);
+}
+
+.mainbannerheaderlogo {
+	position:			absolute;
+	left:				0px;
+	top:				60px;
+	margin-left:			10px;
+	width:				100%;
+}
+
+.mainbannerheadertext {
+	position:			absolute;
+	left:				0px;
+	bottom:				10px;
+	margin-left:			140px;
+	width:				100%;
+}
+
+.mainbannerheaderprev {
+	position:			absolute;
+	height:				auto;
+	top:				10px;
+}
+
+hmain1, hmain2 {
+	font-weight:			bold;
+	color:				white;
+	text-transform: 		uppercase;
+	text-shadow: 			1px 1px 4px black;
+}
+hmain1 {
+	font-size:			2.5vw;
+}
+hmain2 {
+	font-size:			1.2vw;
+}
+
+.leftbox {
+	float:				left;
+	margin-top:			10px;
+	margin-left:			20px;
+	width:				190px;
+	height:				100%;
+	padding:			0;		
+}
+
+.menubox {
+	position:			top;
+	margin-top:			0px;
+	margin-left:			0px;
+	width:				170px;
+	font-size:			1em;
+	background-color:		lightgray;
+	border-radius:			5px 5px;
+	padding:			10px;
+	box-shadow:			0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.infobox {
+	position:			top;
+	margin-top:			10px;
+	margin-left:			0px;
+	width:				170px;
+	font-size:			1em;
+	background-color:		lightgray;
+	border-radius:			5px 5px;	
+	padding:			10px;
+	box-shadow:			0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contentbox {
+	margin-top:			10px;
+	margin-left:			230px;
+	margin-right:			20px;
+	min-height:			80vh;
+	font-size:			1em;
+	background-color:		White;	
+	border-radius:			5px 5px;
+	padding:			20px;
+	/*box-shadow:			0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.footerbox {
+	font-size:			0.8em;
+	text-align:			center;
+	margin-top:			10px;
+	padding:			10px;
+	background-color:		lightgray;
+	border-radius:			0 0 10px 10px;
+}
+
+img {
+	margin:			10px;
+	/*border:			1px solid black;*/
+	border-radius:		5px 5px;
+	max-width:		220px;
+	height:			auto;
+	box-shadow:		0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition:		transform .3s ease;
+}
+
+.img-responsive:hover {
+	transform:		scale(1.5);
+}
+
+.startpageimgs {
+	border:			0;
+	margin:			5px !important;
+	max-width:		300px !important;
+	width:		28% !important;
+	height:			auto !important;
+}
+
+
+.advimg {
+	/*border:			0;*/
+	max-width:		80% !important;
+	height:			auto;
+}
+
+.iconimg {
+	box-shadow:		none;
+	height:			auto;
+	margin:			0;
+	opacity: 	0.7;
+}
+.iconimg:hover {
+	transform:	scale(1.4);
+	opacity: 	0.9;
+}
+
+.iconcontainer {
+	width:			25%;
+	border:			1px solid red;
+}
+
+
+.verb_logo {
+	box-shadow:		none;
+	max-width:		60px;
+	height:			auto;
+	margin:			3;
+}
+.verb_logo:hover {
+	transform:	scale(2.0);
+}
+
+blockquote {
+	margin-left:		30px;
+	background-color: 	WhiteSmoke !important;	
+	padding:		2px;	
+	padding-left:		20px;
+	padding-right:		5px;	
+	border:			1px solid lightgrey;
+	border-left:		5px solid lightgrey;
+	border-radius:		3px 3px;
+}
+
+h1, h2, h3 {
+	background:		inherit;
+	font-weight:		bold;
+	color:			black;
+	text-transform: 	uppercase;
+	text-shadow: 		2px 2px 2px #aaa;
+}
+
+h1 {
+	font-size:		2em;						
+}	
+
+h2 {	
+	font-size:		1.5em;
+}
+
+h2 ~ *:not(h2) {
+	margin-left:		25px;
+}
+
+h3 {
+	font-size:		1.2em;		
+}
+
+h3 ~ *:not(h3) {
+	/*margin-left:		50px;*/
+}
+
+a {
+	text-decoration: 	none;
+}
+
+
+a:link {
+	color:			RoyalBlue ;
+}
+
+a:visited {
+	color:			RoyalBlue ;
+}
+
+a:hover {
+	color:			darkblue;
+}
+
+.mainmenu {
+	margin:			0;
+	padding:		0;
+	width:			100%;
+	background-color:	lightgray;
+	border-radius: 		5px 5px;
+}
+
+
+.mlev0 {
+	background-color:	lightgray;	
+	width:			100%;
+	margin:			0;
+	padding-left:		5px;
+	border-radius: 		5px 5px;	
+}
+
+.mlev1 {
+	background-color:	lightgray;	
+	width:			100%;
+	margin:			0;
+	padding-left:		10px;
+	border-radius: 		5px 5px;	
+}
+
+.menu-item{
+	text-decoration: 	none;
+	color:			black !important;
+	background-color:	lightgray;
+	
+}
+
+.menu-current {
+	font-weight:		none;
+	text-decoration: 	none;
+	color:			white;
+	background-color:	lightgray;
+}
+
+.menu-item:hover {
+	color:			darkgray !important;
+}
+
+.menu-current:hover {
+	color:			darkgray !important;
+}
