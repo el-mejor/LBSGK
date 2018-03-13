@@ -1,6 +1,8 @@
 /*
 This file is part of the LBSGK Template
 
+https://github.com/el-mejor/LBSGK
+
 Copyright (c) 2017 Lars Becker (lars@lars-b.net)
 */
 
@@ -29,6 +31,7 @@ body {
 	float:				top;
 	width:				100%;
 	height:				200px;
+	min-height:			200px;
 	overflow: 			hidden;
 	margin:				0px;
 	border-radius:			10px 10px 0 0;
@@ -195,7 +198,7 @@ img {
 	opacity: 	0.7;
 }
 .iconimg:hover {
-	transform:	scale(1.4);
+	transform:	scale(1.02);
 	opacity: 	0.9;
 }
 

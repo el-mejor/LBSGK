@@ -1,6 +1,8 @@
 <!-- 
 LBSGK Template made for www.sg-kornburg.de V0.9
 
+https://github.com/el-mejor/LBSGK
+
 Designed to be used with WebsiteBaker (www.websitebaker.org)
 
 If you like this template feel free to use it for your own project. 
