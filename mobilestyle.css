@@ -31,18 +31,47 @@ Copyright (c) 2017 Lars Becker (lars@lars-b.net)
 		background:		white !important;
 		box-shadow:		none !important;	
     }
+    
+    .mainbanner {
+   	    	position:			sticky !important;
+		position:			-webkit-sticky !important;
+		top:				-40px !important;
+		height:				200px;
 
-    .leftbox {width:0;}
+    }
+    
+    .mainbannerbackimg {
+    		border-radius:  0 !important;
+    }
+    
+    .mainbannerheaderlogo {		
+		left:				70px;
+    }
+
+    .mainbannerheadertext {
+		left:				70px;
+    }
+    
+    .mainbannerheaderprev {
+    		display: none;
+    }
+
+    .leftbox {
+    		display:none;
+    }
     .contentbox {
+		z-index:	1000 !important;
     		min-height:	50vh !important;
     		height:		auto !important;
     		margin-left:	10px !important;  
     		font-size:	1em !important;  
-    		box-shadow:	none !important;		
+    		box-shadow:	none !important;
+    				
     }
     
     .footerbox{
-    		font-size:	0.5em !important;  		
+    		font-size:	0.5em !important;  
+    		border-radius:  0 !important;		
     }
     
     .img-responsive {
@@ -69,52 +98,58 @@ Copyright (c) 2017 Lars Becker (lars@lars-b.net)
     
     /* the mobile menu to show */
     .topbox {
-    display:			block !important;
-    float:			top;
-    position:			sticky;
-    position:			-webkit-sticky;
-    top:			0;
-    left:			0;
-    width:			68px;
-    height:			68px;
-    max-height:			100vh;
-    margin: 			0;
-    padding:			2px;
-    transition-timing-function:	ease;
-    transition:			height .3s;
-    -webkit-transition: 	height .3s;
-    transition:			width .3s;
-    -webkit-transition: 	width .3s;
-    font-size:			1em;
-    background-color:		Black;
-    color:			White;
-    font-weight:		none;    
+		    z-index:			1001;
+		    display:			block !important;
+		    float:			left;
+		    /*position:			sticky;
+		    position:			-webkit-sticky;*/
+		    position:			fixed;
+		    opacity:			0.8;
+		    overflow:			hidden;
+		    top:			0;
+		    left:			0;
+		    width:			68px;
+		    height:			68px;
+		    max-height:			100vh;
+		    margin: 			0;
+		    padding:			2px;
+		    transition-timing-function:	ease;
+		    transition:			height .3s;
+		    -webkit-transition: 	height .3s;
+		    transition:			width .3s;
+		    -webkit-transition: 	width .3s;
+		    font-size:			1em;
+		    background-color:		Black;
+		    color:			White;
+		    font-weight:		none;    
+		    border-radius:		5px 5px;
     }
     .topbox-exp {
-    	width: 90% !important;
-    	height: auto !important;
+    		width: 90% !important;
+    		height: 90vh !important;
     }
     
     .mobilemainmenu {
-    	display: none;
+    		display: none;
+    		padding: 30px;
     }
 
     .mobilemenuitem:link {color: White;}
     .mobilemenuitem:visited {color: White;}
     
     .mobilemenu-current {
-    	color:				gray! important;
-    	background-color:		Black !important;
+    		color:				gray! important;
+    		background-color:		Black !important;
     }
     .mobilemenuitem{
-    	background-color:		Black !important;
-    	font-size:			1.5em !important;
+    		background-color:		Black !important;
+    		font-size:			1.5em !important;    
+    		/*border: 1px solid lime;	    	*/
     }
     
     .mlevmobile0 {    		
 		background-color:	Black;	
-		margin:			5px;
-		padding-left:		5px;	
+		/*border: 1px solid red;		*/
     }
 
     .mlevmobile1 {display: none;}

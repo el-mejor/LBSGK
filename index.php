@@ -1,5 +1,7 @@
 <!-- 
-LBSGK Template made for www.sg-kornburg.de V0.9
+LBSGK Template made for www.sg-kornburg.de V0.91
+
+Adapt the images of the banner rotation in banner_change.js.
 
 https://github.com/el-mejor/LBSGK
 
@@ -99,17 +101,18 @@ if(!defined('WB_URL')) {
 			<!-- adapt links and images for your own project! -->
 			
 			<div class="mainbanner">
-				<a href="http://newpage.sg-kornburg.de">
-					<img class="mainbannerbackimg" src="<?php echo WB_URL;?>/media/graphics_homepage/head3.jpg"/>
+					<img class="mainbannerbackimg"/>
+					<img class="mainbannerbackimg"/>
 					<div class="mainbannerheaderlogo">
-						<img class="mainbannerlogo " src="<?php echo WB_URL;?>/media/graphics_homepage/kornburg.gif" align="left"/>
+						<a href="http://newpage.sg-kornburg.de">
+							<img class="mainbannerlogo " src="<?php echo WB_URL;?>/media/graphics_homepage/kornburg.gif" align="left"/>
+						</a>
 					</div>
 					<div class="mainbannerheadertext">
 						<hmain1><?php page_title('', '[WEBSITE_TITLE]'); ?></hmain1>
 						<br/>
 						<hmain2><?php page_header('', '[PAGE_HEADER]'); ?></hmain2>
-					</div>	
-				</a>
+					</div>					
 				
 				<!-- website search -->	
 				<div class="mainbannerheaderprev" style="right:10px;">
@@ -194,6 +197,7 @@ if(!defined('WB_URL')) {
 				<?php page_footer(); ?>
 			</div>
 		</div>
+		<script async src="<?php echo TEMPLATE_DIR; ?>/banner_change.js"></script>
 	</body>
 </html>
 
