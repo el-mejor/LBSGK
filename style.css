@@ -8,6 +8,7 @@ body {
 	font-family: 			"Montserrat";
 	font-size:			90%;	
 	min-height:			100vh;
+	background:			lightgray;
 }
 
 .topbox {display:none;}
@@ -15,7 +16,8 @@ body {
 .mainframe {
 	margin:				auto;
 	padding:			0px;
-	/*background:			linear-gradient(white, white);*/
+	/*background:			linear-gradient(dimgray, white);*/
+	background:			white;
 	min-width:			950px;
 	max-width:			1280px; /* increase if there'S a suitable main banner image but not larger than 1280 */
 	width:				80vw;	
@@ -48,11 +50,11 @@ body {
 	min-height:			100%;
 	height:				auto;
 	box-shadow:			none;
-	-webkit-transition: 		opacity 1.5s ease-in-out;
-        -moz-transition: 		opacity 1.5s ease-in-out;
-        -ms-transition: 		opacity 1.5s ease-in-out;
-        -o-transition: 			opacity 1.5s ease-in-out;
-        transition: 			opacity 1.5s ease-in-out;
+	-webkit-transition: 		opacity 2.5s ease-in-out;
+        -moz-transition: 		opacity 2.5s ease-in-out;
+        -ms-transition: 		opacity 2.5s ease-in-out;
+        -o-transition: 			opacity 2.5s ease-in-out;
+        transition: 			opacity 2.5s ease-in-out;
 	opacity:			1;
         z-index:			100;
 }

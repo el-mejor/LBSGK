@@ -11,14 +11,26 @@ Copyright (c) 2017 Lars Becker (lars@lars-b.net)
 var imgidx = 0;
 var images = [
     "http://www.sg-kornburg.de/wb2/media/graphics-static-content/boeller_einzel.JPG",
-    "http://www.sg-kornburg.de/wb2/media/graphics-static-content/boeller_reihe.JPG"
+    "http://www.sg-kornburg.de/wb2/media/graphics-static-content/boeller_reihe.JPG",
+    "http://www.sg-kornburg.de/wb2/media/graphics-static-content/bogen_comm.jpg"
 ];
 
 var elements = document.getElementsByClassName("mainbannerbackimg");
 
-elements[0].src = images[images.length - 1];
-elements[1].src = images[0];
+/* initiate with a random first image */
+var firstimg = Math.floor(Math.random() * elements.length);
 
+elements[1].src = images[firstimg];
+
+firstimg -= 1;
+
+if (firstimg < 0) {
+	firstimg = images.length - 1;
+}
+
+elements[0].src = images[firstimg];
+
+/* function to change img periodic */
 function change() {
 
 	
@@ -36,9 +48,9 @@ function change() {
 		elements[1].src = images[imgidx];
 
 		elements[1].classList.toggle('hidden');
-	}, 2000);
+	}, 3000);
 }
 
-setInterval(change, 8000);
+setInterval(change, 12000);
 
 
