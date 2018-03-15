@@ -60,7 +60,7 @@ Copyright (c) 2017 Lars Becker (lars@lars-b.net)
     		display:none;
     }
     .contentbox {
-		z-index:	1000 !important;
+		z-index:	90 !important;
     		min-height:	50vh !important;
     		height:		auto !important;
     		margin-left:	10px !important;  

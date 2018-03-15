@@ -196,7 +196,7 @@ if(!defined('WB_URL')) {
 			<div class="footerbox">
 				<?php page_footer(); ?>
 			</div>
-		</div>
+		</div>		
 		<script async src="<?php echo TEMPLATE_DIR; ?>/banner_change.js"></script>
 	</body>
 </html>
