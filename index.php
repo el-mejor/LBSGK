@@ -1,5 +1,5 @@
 <!-- 
-LBSGK Template made for www.sg-kornburg.de V0.91
+LBSGK Template made for www.sg-kornburg.de V0.93
 
 Adapt the images of the banner rotation in banner_change.js.
 
@@ -13,9 +13,11 @@ If you like this template feel free to use it for your own project.
 
 Necessary files:
 
+index.php
 style.css
 mobilestyle.css
 mobilemenu.png
+banner_change.js
 
 -----------------
 
@@ -52,40 +54,28 @@ if(!defined('WB_URL')) {
 	<head>
 		<title><?php page_title(); ?></title>
 		<meta http-equiv="Content-Type" content="text/html; charset=<?php if(defined('DEFAULT_CHARSET')) { echo DEFAULT_CHARSET; } else { echo 'utf-8'; }?>" />
+
+		<link media="screen and (max-device-width: 1024px)" href="<?php echo TEMPLATE_DIR; ?>/mobilestyle.css" rel="stylesheet" type="text/css" />
+		<link href="<?php echo TEMPLATE_DIR; ?>/style.css" rel="stylesheet" type="text/css" />
+
 		<meta name="description" content="<?php page_description(); ?>" />
 		<meta name="keywords" content="<?php page_keywords(); ?>" />	
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat" />
-		<link href="<?php echo TEMPLATE_DIR; ?>/style.css" rel="stylesheet" type="text/css" />
-		<link href="<?php echo TEMPLATE_DIR; ?>/mobilestyle.css" rel="stylesheet" type="text/css" />
 		<link href="<?php echo WB_URL;?>/modules/event/frontend.css" rel="stylesheet"  type="text/css" />
 		<link href="<?php echo WB_URL;?>/modules/news/frontend.css" rel="stylesheet"  type="text/css" />
 		<link rel="shortcut icon" href="<?php echo WB_URL;?>/../favicon.ico" type="image/x-icon">
-		
-		<script type="text/javascript">	
-			/* warn about obsolete browser */
-			var $buoop = {} 
-			$buoop.ol = window.onload; 
-			
-			window.onload=function(){ 
-			 if ($buoop.ol) $buoop.ol(); 
-			 var e = document.createElement("script"); 
-			 e.setAttribute("type", "text/javascript"); 
-			 e.setAttribute("src", "http://browser-update.org/update.js"); 
-			 document.body.appendChild(e); 
-			} 
 
-			/* expand mobile menu */
+		<!-- show / hide mobile menu -->
+		<script type="text/javascript">	
 		    	function showmenu() {		    
 			       var e = document.getElementById('mobilemenu');
 			       var bar = document.getElementById('mobilemenubar');
 			       if(e.style.display == 'block') {
-			          /*bar.classList.toggle('topbox-exp');*/
 			          e.style.display = 'none';	
 			          			  
-			          bar.style.height = '68px';
-			          bar.style.width = '68px';		        			          
+			          bar.style.height = 'initial';
+			          bar.style.width = 'initial';		        			          
 			       } else {	
-			          /*bar.classList.toggle('topbox-exp');	*/	          
 			          e.style.display = 'block';
 				  
 			          bar.style.height = 'auto';
@@ -115,7 +105,9 @@ if(!defined('WB_URL')) {
 					</div>					
 				
 				<!-- website search -->	
-				<div class="mainbannerheaderprev" style="right:10px;">
+				<div class="mainbannerheaderprev">
+					<!--<small><a class="contactbannerlink" href="[wblink15]">Kontakt</a></small>
+					-->
 					<?php if(SHOW_SEARCH) { ?>
 						<!--<?php echo $TEXT['SEARCH']; ?> -->
 						<form name="search" action="<?php echo WB_URL; ?>/search/index.php" method="get">
@@ -125,13 +117,14 @@ if(!defined('WB_URL')) {
 							<input type="submit" name="submit" value="<?php echo $TEXT['SEARCH']; ?>" style="width: 50px;" />
 						</form>
 					<?php } ?>
+					
 				</div>
 			</div>
 			
 			<!-- mobile only menu box -->
 			<div class="topbox" id="mobilemenubar">	
 				<a href="#" class="mobilemenuitem mobilemenu-item" onclick="showmenu()">
-					<img src="<?php echo TEMPLATE_DIR; ?>/mobilemenu.png" style="margin:0 !important;height:64px !important;width:auto !important;"/>
+					<img class="mobilemenubuttonimg" src="<?php echo TEMPLATE_DIR; ?>/mobilemenu.png"/>
 				</a>			
 				<div id="mobilemenu" class="mobilemainmenu">
 					<?php show_menu2(1, SM2_ROOT, SM2_CURR+0, '','<span class="mlevmobile[level]"><a href="[url]" class="mobilemenuitem mobile[class]">[menu_title]</a></span><br/> ','','','');	 ?>				
@@ -174,7 +167,7 @@ if(!defined('WB_URL')) {
 				<!-- info box commercials -->
 				<!-- remove this box if you dont have anything to display or add your own content -->
 				<!-- adapt links and images for your own project! -->
-				<div id="werbung" class="infobox">				
+				<!-- <div id="werbung" class="infobox">				
 					<p align="center">
 						<a href="[wblink24]">
 							<img class="advimg" src="<?php echo WB_URL;?>/media/graphics_sponsoring/reifen_kfz.jpg">
@@ -185,6 +178,7 @@ if(!defined('WB_URL')) {
 						</a>
 					</p>
 				</div>
+				-->
 			</div>			
 			
 			<!-- content box -->
@@ -196,7 +190,8 @@ if(!defined('WB_URL')) {
 			<div class="footerbox">
 				<?php page_footer(); ?>
 			</div>
-		</div>		
+		</div>
+		<!-- script to rotate banner image -->		
 		<script async src="<?php echo TEMPLATE_DIR; ?>/banner_change.js"></script>
 	</body>
 </html>

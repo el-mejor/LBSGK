@@ -7,176 +7,237 @@ Copyright (c) 2017 Lars Becker (lars@lars-b.net)
 */
 
 /* hide some boxes and modify appearance for mobile devices */
-@media all and (max-device-width: 1024px) /*(max-width: 1024px)*/
+@media all and (orientation: portrait)
 {
-    body {
-    		font-family: 		"Verdana" !important;
-    		font-size:		200% !important;
-    		height:			100vh !important;
-    		min-height:		100vh !important;
-    		width:			100vw !important;
-    		margin:			0 !important;
-    		padding:		0 !important;
-    		-webkit-text-size-adjust: 100%;
-    }
-    
-    .mainframe {
-		margin:		0 !important;
-		border-radius:		0 !important;
-		width:			100vw !important;
-		min-width:		100vw !important;
-		max-width:		100vw !important;
-		min-height:		50vh !important;
-		max-height:		100vh !important;
-		background:		white !important;
-		box-shadow:		none !important;	
-    }
-    
-    .mainbanner {
+	body {
+		font-size:		200% !important;
+		-webkit-text-size-adjust: 100% !important;  
+	}
+	
+	.iconimg {
+	    	width:		128px !important;
+	    	height:		128px !important;
+	    	border:		3px solid dimgray !important;
+        } 
+        
+        .mainbanner {
    	    	position:			sticky !important;
 		position:			-webkit-sticky !important;
 		top:				-40px !important;
 		height:				200px;
-
-    }
-    
-    .mainbannerbackimg {
-    		border-radius:  0 !important;
-    }
-    
-    .mainbannerheaderlogo {		
-		left:				70px;
-    }
-
-    .mainbannerheadertext {
-		left:				70px;
-    }
-    
-    .mainbannerheaderprev {
-    		display: none;
-    }
-
-    .leftbox {
-    		display:none;
-    }
-    .contentbox {
-		z-index:	90 !important;
-    		min-height:	50vh !important;
-    		height:		auto !important;
-    		margin-left:	10px !important;  
-    		font-size:	1em !important;  
-    		box-shadow:	none !important;
-    				
-    }
-    
-    .footerbox{
-    		font-size:	0.5em !important;  
-    		border-radius:  0 !important;		
-    }
-    
-    .img-responsive {
+        }
+        
+        .img-responsive {
     		width:		450px !important;
     		max-width:	450px !important;
     		height:		auto !important;
-    }
-    
-    .img-responsive:hover {
-	    	transform:	scale(1.0) !important;
-    }
-    .verb-logo:hover {
-    		transform:	scale(1.0) !important;
-    }   
-    .iconimg:hover {
-	transform:	scale(1.2);
-	opacity: 	1.5;
-    }
-    
-    .menubox {display:none;}
-    .infobox {display:none;}
-    hmain1 {font-size:6vw !important;}
-    hmain2 {display:none;}
-    
-    /* the mobile menu to show */
-    .topbox {
-		    z-index:			1001;
-		    display:			block !important;
-		    float:			left;
-		    /*position:			sticky;
-		    position:			-webkit-sticky;*/
-		    position:			fixed;
-		    opacity:			0.8;
-		    overflow:			hidden;
-		    top:			0;
-		    left:			0;
-		    width:			68px;
-		    height:			68px;
-		    max-height:			100vh;
-		    margin: 			0;
-		    padding:			2px;
-		    transition-timing-function:	ease;
-		    transition:			height .3s;
-		    -webkit-transition: 	height .3s;
-		    transition:			width .3s;
-		    -webkit-transition: 	width .3s;
-		    font-size:			1em;
-		    background-color:		Black;
-		    color:			White;
-		    font-weight:		none;    
-		    border-radius:		5px 5px;
-    }
-    .topbox-exp {
-    		width: 90% !important;
-    		height: 90vh !important;
-    }
-    
-    .mobilemainmenu {
-    		display: none;
-    		padding: 30px;
-    }
-
-    .mobilemenuitem:link {color: White;}
-    .mobilemenuitem:visited {color: White;}
-    
-    .mobilemenu-current {
-    		color:				gray! important;
-    		background-color:		Black !important;
-    }
-    .mobilemenuitem{
-    		background-color:		Black !important;
-    		font-size:			1.5em !important;    
-    		/*border: 1px solid lime;	    	*/
-    }
-    
-    .mlevmobile0 {    		
-		background-color:	Black;	
-		/*border: 1px solid red;		*/
-    }
-
-    .mlevmobile1 {display: none;}
-    
-	h1, h2, h3 {
-		text-shadow: 		none !important;
-		width: 			100% !important;		
+        }
+        
+        .topbox {
+    		 width:			68px;
+		 height:		68px;
 	}
 	
-	h1 {
-		font-size:		2em !important;						
-	}	
-	
-	h2 {	
-		font-size:		1.5em !important;
-	}
-	
-	h2 ~ *:not(h2) {
-		margin-left:		0 !important;
-	}
-	
-	h3 {
-		font-size:		1.2em !important;		
-	}
-	
-	h3 ~ *:not(h3) {
-		margin-left:		0 !important;
+	.mobilemenubuttonimg {
+		margin:			0 !important;
+		height:			68px !important;
+		width:			68px !important;		
 	}
 }
+
+@media all and (orientation: landscape)
+{
+	    body {
+		    font-size:		100% !important;
+		    -webkit-text-size-adjust: 100% !important;  
+	    }
+	
+	    .iconimg {
+	    	width:		64px !important;
+	    	height:		64px !important;
+	    	border:		3px solid dimgray !important;
+        } 
+        
+        .mainbanner {
+		    top:				0 !important;
+		    height:				200px;
+        }
+        
+        .img-responsive {
+    		width:		200px !important;
+    		max-width:	200px !important;
+    		height:		auto !important;
+        }
+        
+        .topbox {
+    		 width:			34px;
+		     height:		34px;
+	}
+	
+	.mobilemenubuttonimg {
+		margin:			0 !important;
+		height:			34px !important;
+		width:			34px !important;
+	}
+}
+
+body {
+	font-family: 		"Verdana" !important;
+	height:			100vh !important;
+	min-height:		100vh !important;
+	width:			100vw !important;
+	margin:			0 !important;
+	padding:		0 !important;
+	background:		#ffffff !important;
+	  		
+}
+
+.mainframe {
+	margin:			0 !important;
+	padding:		0 !important;
+	border-radius:		0 !important;
+	width:			100vw !important;
+	min-width:		100vw !important;
+	max-width:		100vw !important;
+	min-height:		50vh !important;
+	height:			auto !important;
+	max-height:		100vh !important;
+	background:		#ffffff !important;
+	box-shadow:		none !important;		
+}
+
+.mainbannerbackimg {
+	border-radius:  0 !important;
+}
+
+.mainbannerheaderlogo {		
+	left:				70px !important;
+}
+
+.mainbannerheadertext {
+	left:				70px !important;
+}
+
+.mainbannerheaderprev {
+	display: none;
+}
+
+.leftbox {
+	display:none;
+}
+.contentbox {
+	z-index:	90 !important;
+	min-height:	50vh !important;
+	height:		auto !important;
+	margin:		0 !important;  
+	font-size:	1em !important;  
+	box-shadow:	none !important;    		    				
+}
+
+.footerbox {
+	font-size:	0.5em !important;  
+	border-radius:  0 !important;		
+}
+
+.img-responsive:hover {
+    	transform:	scale(1.0) !important;
+}
+.verb-logo:hover {
+	transform:	scale(1.0) !important;
+}  
+
+.iconimg:hover {
+	transform:	scale(1.2);
+	opacity: 	1.5;
+}
+
+.menubox {display:none;}
+.infobox {display:none;}
+
+/* the mobile menu to show */
+.topbox {
+	    z-index:			1001;
+	    display:			block !important;
+	    float:			left;		    
+	    position:			fixed;
+	    opacity:			0.8;
+	    overflow:			hidden;
+	    top:			0;
+	    left:			0;
+	    max-height:			100vh;
+	    margin: 			0;
+	    padding:			2px;
+	    transition:			height .3s ease-in-out;
+	    -webkit-transition: 	height .3s ease-in-out;
+	    transition:			width .3s ease-in-out;
+	    -webkit-transition: 	width .3s ease-in-out;
+	    font-size:			1em;
+	    background-color:		Black;
+	    color:			White;
+	    font-weight:		normal;    
+	    border-radius:		5px 5px;
+}
+
+.mobilemainmenu {
+	display: none;
+	padding: 30px;
+}
+
+.mobilemenuitem:link {color: White;}
+.mobilemenuitem:visited {color: White;}
+
+.mobilemenu-current {
+	color:				gray! important;
+	background-color:		Black !important;
+}
+.mobilemenuitem{
+	background-color:		Black !important;
+	font-size:			1.5em !important;    
+	/*border: 1px solid lime;	    	*/
+}
+
+.mlevmobile0 {    		
+	background-color:	Black;	
+	/*border: 1px solid red;		*/
+}
+
+.mlevmobile1 {display: none;}
+
+blockquote.bqinfo, div.m_news {
+	background-color: 	#EEFFEE!important;	
+	border:			1px solid #99c68e !important;
+	border-left:		5px solid #99c68e !important;
+    }
+
+blockquote.bqwarn {
+	background-color: 	#ffffc2 !important;	
+	border:			1px solid #fdd017 !important;
+	border-left:		5px solid #fdd017 !important;
+}
+    
+h1, h2, h3 {
+	text-shadow: 		none !important;
+	width: 			100% !important;		
+}
+
+h1 {
+	font-size:		2em !important;						
+}	
+
+h2 {	
+	font-size:		1.5em !important;
+}
+
+h2 ~ *:not(h2) {
+	margin-left:		0 !important;
+}
+
+h3 {
+	font-size:		1.2em !important;		
+}
+
+h3 ~ *:not(h3) {
+	margin-left:		0 !important;
+}
+
 

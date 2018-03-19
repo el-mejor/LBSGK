@@ -4,31 +4,40 @@ https://github.com/el-mejor/LBSGK
 Copyright (c) 2017 Lars Becker (lars@lars-b.net)
 */
 
-body {	
-	font-family: 			"Montserrat";
-	font-size:			90%;	
-	min-height:			100vh;
-	background:			lightgray;
+/* development 
+div {
+	border: 1px solid magenta !important;
+}*/
+
+/* excluvely styled for non-mobile devices */
+@media all and (min-device-width: 1024px)
+{
+	body {	
+		font-family: 			"Montserrat";
+		font-size:			90%;	
+		min-height:			100vh;
+		background:			linear-gradient(#99c68e, #6CBB3C);
+		/*background:			linear-gradient(#347c17, #4AA02c);*/
+	}
+	
+	.topbox {display:none;}
 }
 
-.topbox {display:none;}
 
 .mainframe {
 	margin:				auto;
 	padding:			0px;
-	/*background:			linear-gradient(dimgray, white);*/
 	background:			white;
 	min-width:			950px;
 	max-width:			1280px; /* increase if there'S a suitable main banner image but not larger than 1280 */
 	width:				80vw;	
-	/*max-height:			100px;	*/
 	border-radius:			10px 10px;
 	box-shadow:			0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .mainbanner {		
+
 	position:			relative;
-	float:				top;
 	width:				100%;
 	height:				200px;
 	min-height:			200px;
@@ -52,7 +61,6 @@ body {
 	box-shadow:			none;
 	-webkit-transition: 		opacity 2.5s ease-in-out;
         -moz-transition: 		opacity 2.5s ease-in-out;
-        -ms-transition: 		opacity 2.5s ease-in-out;
         -o-transition: 			opacity 2.5s ease-in-out;
         transition: 			opacity 2.5s ease-in-out;
 	opacity:			1;
@@ -76,18 +84,6 @@ body {
         z-index:			200;
 }
 
-.mainbannerprev {
-	width:				75px;
-	height:				auto;
-	margin-left			10px;	
-	border-radius:			3px 3px;
-	box-shadow:			0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-        z-index:			200;
-}
-.mainbannerprev:hover{
-	transform:	scale(1.5);
-}
-
 .mainbannerheaderlogo {
 	position:			absolute;
 	left:				0px;
@@ -108,27 +104,56 @@ body {
 
 .mainbannerheaderprev {
 	position:			absolute;
-	height:				auto;
 	top:				10px;
-        z-index:			200;
+	right:				10px;
+	text-align:			left;
+	height:				auto;
+        z-index:			2000;
+        border:				1px solid dimgray;
+        border-radius:			5px 5px;
+        opacity:			0.90;
+        background:			white !important;
+	padding:			3px;
+	margin:				3px;
+}
+
+.contactbannerlink {
+	color:				black !important;	
 }
 
 hmain1, hmain2 {
 	font-weight:			bold;
 	color:				white;
 	text-transform: 		uppercase;
-	text-shadow: 			1px 1px 4px black;
+	text-shadow: 			-1px 0px black, 0px -1px black, 1px 0px black, 0px 1px black, 1px 1px 4px #404040;
 }
-hmain1 {
-	font-size:			2.5vw;
+
+@media all and (min-width: 1024px)
+{
+	hmain1 {
+		font-size:			3.5em;
+	}
+	hmain2 {
+		font-size:			1.25em;
+	}
 }
-hmain2 {
-	font-size:			1.2vw;
+
+@media all and (max-width: 1024px)
+{
+	hmain1 {
+		font-size:			6vw;
+	}
+	hmain2 {
+		display: none;
+	}
 }
 
 .leftbox {
+	position:			sticky;
+	position:			-webkit-sticky;
+	top:				10px;
 	float:				left;
-	margin-top:			10px;
+	margin-top:			20px;
 	margin-left:			20px;
 	width:				190px;
 	height:				100%;
@@ -136,12 +161,11 @@ hmain2 {
 }
 
 .menubox {
-	position:			top;
 	margin-top:			0px;
 	margin-left:			0px;
 	width:				170px;
 	font-size:			1em;
-	background-color:		lightgray;
+	background-color:		lightgray; /*#99c68e;*/
 	border-radius:			5px 5px;
 	padding:			10px;
 	box-shadow:			0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -149,12 +173,11 @@ hmain2 {
 
 
 .infobox {
-	position:			top;
 	margin-top:			10px;
 	margin-left:			0px;
 	width:				170px;
 	font-size:			1em;
-	background-color:		lightgray;
+	background-color:		#99c68e;
 	border-radius:			5px 5px;	
 	padding:			10px;
 	box-shadow:			0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -166,7 +189,7 @@ hmain2 {
 	margin-right:			20px;
 	min-height:			80vh;
 	font-size:			1em;
-	background-color:		White;	
+	background-color:		white;	
 	border-radius:			5px 5px;
 	padding:			20px;
 	/*box-shadow:			0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
@@ -179,6 +202,10 @@ hmain2 {
 	padding:			10px;
 	background-color:		lightgray;
 	border-radius:			0 0 10px 10px;
+}
+.footerbox h3 {
+	text-shadow: none !important;
+	color:	black !important;
 }
 
 img {
@@ -212,9 +239,12 @@ img {
 
 .iconimg {
 	box-shadow:		none;
-	height:			auto;
+	width:			64px;
+    	height:			64px;
 	margin:			0;
-	opacity: 		0.7;
+	padding:		5px;
+	border:			2px solid dimgray;
+	border-radius:		20%;
 }
 .iconimg:hover {
 	transform:	scale(1.02);
@@ -231,7 +261,7 @@ img {
 	box-shadow:		none;
 	max-width:		60px;
 	height:			auto;
-	margin:			3;
+	margin:			0;
 }
 .verb_logo:hover {
 	transform:	scale(2.0);
@@ -239,21 +269,31 @@ img {
 
 blockquote {
 	margin-left:		30px;
-	background-color: 	WhiteSmoke !important;	
 	padding:		2px;	
 	padding-left:		20px;
-	padding-right:		5px;	
-	border:			1px solid lightgrey;
-	border-left:		5px solid lightgrey;
+	padding-right:		5px;
 	border-radius:		3px 3px;
 }
+
+blockquote.bqinfo, div.m_news {
+	background-color: 	#EEFFDD !important;	
+	border:			1px solid #99c68e !important;
+	border-left:		5px solid #99c68e !important;
+}
+
+blockquote.bqwarn {
+	background-color: 	#ffffc2 !important;	
+	border:			1px solid #fdd017 !important;
+	border-left:		5px solid #fdd017 !important;
+}
+
 
 h1, h2, h3 {
 	background:		inherit;
 	font-weight:		bold;
 	color:			black;
 	text-transform: 	uppercase;
-	text-shadow: 		2px 2px 2px #aaa;
+	text-shadow: 		2px 2px 2px lightgray;
 }
 
 h1 {
@@ -282,11 +322,11 @@ a {
 
 
 a:link {
-	color:			RoyalBlue ;
+	color:			SteelBlue ;
 }
 
 a:visited {
-	color:			RoyalBlue ;
+	color:			SteelBlue ;
 }
 
 a:hover {
@@ -297,13 +337,13 @@ a:hover {
 	margin:			0;
 	padding:		0;
 	width:			100%;
-	background-color:	lightgray;
+	background-color:	lightgray /*#99c68e*/;
 	border-radius: 		5px 5px;
 }
 
 
 .mlev0 {
-	background-color:	lightgray;	
+	background-color:	lightgray ;	
 	width:			100%;
 	margin:			0;
 	padding-left:		5px;
@@ -311,7 +351,7 @@ a:hover {
 }
 
 .mlev1 {
-	background-color:	lightgray;	
+	background-color:	lightgray ;	
 	width:			100%;
 	margin:			0;
 	padding-left:		10px;
@@ -321,21 +361,21 @@ a:hover {
 .menu-item{
 	text-decoration: 	none;
 	color:			black !important;
-	background-color:	lightgray;
+	background-color:	lightgray ;
 	
 }
 
 .menu-current {
-	font-weight:		none;
+	font-weight:		normal;
 	text-decoration: 	none;
-	color:			white;
-	background-color:	lightgray;
+	color:			white !important;
+	background-color:	lightgray ;
 }
 
 .menu-item:hover {
-	color:			darkgray !important;
+	color:			green !important;
 }
 
 .menu-current:hover {
-	color:			darkgray !important;
+	color:			green !important;
 }
