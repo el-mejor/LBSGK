@@ -4,20 +4,26 @@ https://github.com/el-mejor/LBSGK
 Copyright (c) 2017 Lars Becker (lars@lars-b.net)
 */
 
-/* development 
+/* development  
 div {
-	border: 1px solid magenta !important;
+	border: 1px dashed magenta !important;
+}
+td{
+	border: 1px dashed lime !important;
 }*/
 
+
 /* excluvely styled for non-mobile devices */
-@media all and (min-device-width: 1024px)
+@media all and (min-width: 1024px)
 {
 	body {	
 		font-family: 			"Montserrat";
 		font-size:			90%;	
-		min-height:			100vh;
+		min-height:			100vh;		
 		background:			linear-gradient(#99c68e, #6CBB3C);
-		/*background:			linear-gradient(#347c17, #4AA02c);*/
+		
+
+
 	}
 	
 	.topbox {display:none;}
@@ -37,7 +43,7 @@ div {
 
 .mainbanner {		
 
-	position:			relative;
+	position:			relative;	
 	width:				100%;
 	height:				200px;
 	min-height:			200px;
@@ -54,7 +60,7 @@ div {
 	border:				0;
 	border-radius:			5px 5px 0 0;
 	margin:				0;
-	max-width:			1280px;	
+	max-width:			1280px;
 	width:				100%;
 	min-height:			100%;
 	height:				auto;
@@ -76,8 +82,8 @@ div {
 }
 
 .mainbannerlogo {
-	width:				100px;
-	height:				auto;
+	width:				auto;
+	height:				160px;
 	margin:				10px;
 	border-radius:			1px 1px;
 	box-shadow:			none;
@@ -87,7 +93,7 @@ div {
 .mainbannerheaderlogo {
 	position:			absolute;
 	left:				0px;
-	top:				60px;
+	top:				10px;
 	margin-left:			10px;
 	width:				100%;
         z-index:			200;
@@ -95,9 +101,10 @@ div {
 
 .mainbannerheadertext {
 	position:			absolute;
-	left:				0px;
-	bottom:				10px;
-	margin-left:			140px;
+	margin:				0;
+	padding:			0;
+	left:				170px;
+	bottom:				20px;
 	width:				100%;
         z-index:			200;
 }
@@ -134,7 +141,7 @@ hmain1, hmain2 {
 		font-size:			3.5em;
 	}
 	hmain2 {
-		font-size:			1.25em;
+		font-size:			1.0em;
 	}
 }
 
@@ -276,22 +283,26 @@ blockquote {
 }
 
 blockquote.bqinfo, div.m_news {
-	background-color: 	#EEFFDD !important;	
-	border:			1px solid #99c68e !important;
-	border-left:		5px solid #99c68e !important;
+	background-color: 	#fafafa !important;	
+	border:			1px solid #199928 !important;
+	border-left:		5px solid #199928 !important;  /*#99c68e !important;*/
 }
 
 blockquote.bqwarn {
-	background-color: 	#ffffc2 !important;	
+	background-color: 	#fafafa !important;	
 	border:			1px solid #fdd017 !important;
 	border-left:		5px solid #fdd017 !important;
+}
+
+.hidesection {
+	display:		none;
 }
 
 
 h1, h2, h3 {
 	background:		inherit;
 	font-weight:		bold;
-	color:			black;
+	color:			#199928;
 	text-transform: 	uppercase;
 	text-shadow: 		2px 2px 2px lightgray;
 }
@@ -373,9 +384,9 @@ a:hover {
 }
 
 .menu-item:hover {
-	color:			green !important;
+	color:			#199928 !important;
 }
 
 .menu-current:hover {
-	color:			green !important;
+	color:			#199928 !important;
 }

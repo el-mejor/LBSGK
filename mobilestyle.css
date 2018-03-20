@@ -21,9 +21,7 @@ Copyright (c) 2017 Lars Becker (lars@lars-b.net)
         } 
         
         .mainbanner {
-   	    	position:			sticky !important;
-		position:			-webkit-sticky !important;
-		top:				-40px !important;
+		top:				0 !important;
 		height:				200px;
         }
         
@@ -34,8 +32,10 @@ Copyright (c) 2017 Lars Becker (lars@lars-b.net)
         }
         
         .topbox {
-    		 width:			68px;
+    		 width:			100vw;
 		 height:		68px;
+		 position:		sticky !important;
+	    	 position:		-webkit-sticky !important;		
 	}
 	
 	.mobilemenubuttonimg {
@@ -59,8 +59,8 @@ Copyright (c) 2017 Lars Becker (lars@lars-b.net)
         } 
         
         .mainbanner {
-		    top:				0 !important;
-		    height:				200px;
+		    top:			0 !important;
+		    height:			200px;
         }
         
         .img-responsive {
@@ -70,8 +70,10 @@ Copyright (c) 2017 Lars Becker (lars@lars-b.net)
         }
         
         .topbox {
-    		 width:			34px;
-		     height:		34px;
+    		 width:			100vw;
+		 height:		34px;
+		 position:		sticky !important;
+	    	 position:		-webkit-sticky !important;
 	}
 	
 	.mobilemenubuttonimg {
@@ -106,16 +108,13 @@ body {
 	box-shadow:		none !important;		
 }
 
+.mainbanner {
+	border-radius:		0 !important;
+	shadow:			none !important;
+}
+
 .mainbannerbackimg {
 	border-radius:  0 !important;
-}
-
-.mainbannerheaderlogo {		
-	left:				70px !important;
-}
-
-.mainbannerheadertext {
-	left:				70px !important;
 }
 
 .mainbannerheaderprev {
@@ -130,6 +129,7 @@ body {
 	min-height:	50vh !important;
 	height:		auto !important;
 	margin:		0 !important;  
+	margin-top:	30px !important;
 	font-size:	1em !important;  
 	box-shadow:	none !important;    		    				
 }
@@ -157,25 +157,20 @@ body {
 /* the mobile menu to show */
 .topbox {
 	    z-index:			1001;
-	    display:			block !important;
-	    float:			left;		    
-	    position:			fixed;
+	    top:			0 !important;
+	    display:			block !important;	    
 	    opacity:			0.8;
 	    overflow:			hidden;
-	    top:			0;
 	    left:			0;
 	    max-height:			100vh;
 	    margin: 			0;
 	    padding:			2px;
 	    transition:			height .3s ease-in-out;
 	    -webkit-transition: 	height .3s ease-in-out;
-	    transition:			width .3s ease-in-out;
-	    -webkit-transition: 	width .3s ease-in-out;
 	    font-size:			1em;
 	    background-color:		Black;
 	    color:			White;
 	    font-weight:		normal;    
-	    border-radius:		5px 5px;
 }
 
 .mobilemainmenu {

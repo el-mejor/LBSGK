@@ -1,5 +1,5 @@
 <!-- 
-LBSGK Template made for www.sg-kornburg.de V0.93
+LBSGK Template made for www.sg-kornburg.de V0.97
 
 Adapt the images of the banner rotation in banner_change.js.
 
@@ -55,7 +55,7 @@ if(!defined('WB_URL')) {
 		<title><?php page_title(); ?></title>
 		<meta http-equiv="Content-Type" content="text/html; charset=<?php if(defined('DEFAULT_CHARSET')) { echo DEFAULT_CHARSET; } else { echo 'utf-8'; }?>" />
 
-		<link media="screen and (max-device-width: 1024px)" href="<?php echo TEMPLATE_DIR; ?>/mobilestyle.css" rel="stylesheet" type="text/css" />
+		<link media="screen and (max-width: 1024px)" href="<?php echo TEMPLATE_DIR; ?>/mobilestyle.css" rel="stylesheet" type="text/css" />
 		<link href="<?php echo TEMPLATE_DIR; ?>/style.css" rel="stylesheet" type="text/css" />
 
 		<meta name="description" content="<?php page_description(); ?>" />
@@ -65,23 +65,23 @@ if(!defined('WB_URL')) {
 		<link href="<?php echo WB_URL;?>/modules/news/frontend.css" rel="stylesheet"  type="text/css" />
 		<link rel="shortcut icon" href="<?php echo WB_URL;?>/../favicon.ico" type="image/x-icon">
 
-		<!-- show / hide mobile menu -->
 		<script type="text/javascript">	
+			/* show / hide mobile menu */
 		    	function showmenu() {		    
 			       var e = document.getElementById('mobilemenu');
 			       var bar = document.getElementById('mobilemenubar');
 			       if(e.style.display == 'block') {
-			          e.style.display = 'none';	
+			          e.style.display = 'none';
 			          			  
 			          bar.style.height = 'initial';
-			          bar.style.width = 'initial';		        			          
+			          bar.style.width = '100vw';		        			          
 			       } else {	
 			          e.style.display = 'block';
 				  
 			          bar.style.height = 'auto';
-			          bar.style.width = '90%';			          
+			          bar.style.width = '100vw';			          
 			       }
-		    	}			
+		    	}
 		</script>
 	</head>
 	<body>
@@ -98,9 +98,8 @@ if(!defined('WB_URL')) {
 							<img class="mainbannerlogo " src="<?php echo WB_URL;?>/media/graphics_homepage/kornburg.gif" align="left"/>
 						</a>
 					</div>
-					<div class="mainbannerheadertext">
+					<div class="mainbannerheadertext">						
 						<hmain1><?php page_title('', '[WEBSITE_TITLE]'); ?></hmain1>
-						<br/>
 						<hmain2><?php page_header('', '[PAGE_HEADER]'); ?></hmain2>
 					</div>					
 				
@@ -191,6 +190,17 @@ if(!defined('WB_URL')) {
 				<?php page_footer(); ?>
 			</div>
 		</div>
+
+		<!-- script to hide content when news are shown -->
+		<script type="text/javascript">
+			var news = document.getElementsByClassName('post-header');	
+			if (news.length > 0) {			
+				var elements = document.getElementsByClassName('m_wysiwyg');
+				elements[0].classList.toggle('hidesection');
+				elements[2].classList.toggle('hidesection');			
+			}
+		</script>
+		
 		<!-- script to rotate banner image -->		
 		<script async src="<?php echo TEMPLATE_DIR; ?>/banner_change.js"></script>
 	</body>
