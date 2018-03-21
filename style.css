@@ -4,17 +4,17 @@ https://github.com/el-mejor/LBSGK
 Copyright (c) 2017 Lars Becker (lars@lars-b.net)
 */
 
-/* development  
+/* development 
 div {
 	border: 1px dashed magenta !important;
 }
 td{
 	border: 1px dashed lime !important;
-}*/
+} */
 
 
 /* excluvely styled for non-mobile devices */
-@media all and (min-width: 1024px)
+@media all and (min-device-width: 768px)
 {
 	body {	
 		font-family: 			"Montserrat";
@@ -26,17 +26,39 @@ td{
 
 	}
 	
-	.topbox {display:none;}
+	.topbox {display:none;}	
 }
 
+/* diplay last div block of each page in second column when view width is larger than 1600px */
+@media all and (min-width: 1600px)
+{		
+	div.section:last-of-type {
+		position:	absolute !important;
+		top:		20px;
+		right:		20px;
+		width:		30% !important;
+		float:		right !important;
+		
+	}
+	
+	div.section {
+		position:	relative;
+		width:		65%;
+		/*float:		left;*/
+	}
+	
+	.m_news {
+		width:		65%;
+	}
+}
 
 .mainframe {
 	margin:				auto;
 	padding:			0px;
 	background:			white;
-	min-width:			950px;
-	max-width:			1280px; /* increase if there'S a suitable main banner image but not larger than 1280 */
-	width:				80vw;	
+	min-width:			1024px;
+	max-width:			1600px; /* increase if there'S a suitable main banner image but not larger than 1280 */
+	width:				90vw;	
 	border-radius:			10px 10px;
 	box-shadow:			0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -60,7 +82,7 @@ td{
 	border:				0;
 	border-radius:			5px 5px 0 0;
 	margin:				0;
-	max-width:			1280px;
+	max-width:			100%;
 	width:				100%;
 	min-height:			100%;
 	height:				auto;
@@ -76,6 +98,8 @@ td{
 	opacity: 			0 !important;
         z-index:			101 !important;
 }
+
+
 
 .mainbannerbackimg:hover {
 	transform:	scale(1.0);
@@ -135,17 +159,17 @@ hmain1, hmain2 {
 	text-shadow: 			-1px 0px black, 0px -1px black, 1px 0px black, 0px 1px black, 1px 1px 4px #404040;
 }
 
-@media all and (min-width: 1024px)
+@media all and (min-width: 1280px)
 {
 	hmain1 {
 		font-size:			3.5em;
 	}
 	hmain2 {
-		font-size:			1.0em;
+		font-size:			1.5em;
 	}
 }
 
-@media all and (max-width: 1024px)
+@media all and (max-width: 1280px)
 {
 	hmain1 {
 		font-size:			6vw;
@@ -191,6 +215,7 @@ hmain1, hmain2 {
 }
 
 .contentbox {
+	position:			relative;
 	margin-top:			10px;
 	margin-left:			230px;
 	margin-right:			20px;
@@ -217,12 +242,17 @@ hmain1, hmain2 {
 
 img {
 	margin:			10px;
-	/*border:			1px solid black;*/
 	border-radius:		5px 5px;
+	transition:		transform .3s ease;
+	box-shadow:		0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-responsive {
+	
 	max-width:		220px;
 	height:			auto;
-	box-shadow:		0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	transition:		transform .3s ease;
+
+
 }
 
 .img-responsive:hover {
@@ -283,7 +313,7 @@ blockquote {
 }
 
 blockquote.bqinfo, div.m_news {
-	background-color: 	#fafafa !important;	
+	background-color: 	#fafafa !important;
 	border:			1px solid #199928 !important;
 	border-left:		5px solid #199928 !important;  /*#99c68e !important;*/
 }
@@ -316,7 +346,7 @@ h2 {
 }
 
 h2 ~ *:not(h2) {
-	margin-left:		25px;
+	/*margin-left:		25px;*/
 }
 
 h3 {

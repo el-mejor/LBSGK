@@ -7,82 +7,84 @@ Copyright (c) 2017 Lars Becker (lars@lars-b.net)
 */
 
 /* hide some boxes and modify appearance for mobile devices */
-@media all and (orientation: portrait)
+@media all and (orientation: portrait) and (max-device-width: 768px)
 {
 	body {
 		font-size:		200% !important;
-		-webkit-text-size-adjust: 100% !important;  
+		/*-webkit-text-size-adjust: 200% !important;  */
 	}
 	
 	.iconimg {
-	    	width:		128px !important;
-	    	height:		128px !important;
+	    	width:		2em !important;
+	    	height:		2em !important;
 	    	border:		3px solid dimgray !important;
         } 
         
         .mainbanner {
 		top:				0 !important;
-		height:				200px;
+		height:				200px !important;
         }
         
         .img-responsive {
-    		width:		450px !important;
-    		max-width:	450px !important;
+    		width:		300px !important;
+    		max-width:	30% !important;
     		height:		auto !important;
         }
         
         .topbox {
     		 width:			100vw;
-		 height:		68px;
+		 height:		2.3em;
 		 position:		sticky !important;
 	    	 position:		-webkit-sticky !important;		
 	}
 	
 	.mobilemenubuttonimg {
 		margin:			0 !important;
-		height:			68px !important;
-		width:			68px !important;		
+		height:			1.6em !important;
+		width:			1.6em !important;		
 	}
 }
 
-@media all and (orientation: landscape)
+@media all and (orientation: landscape) and (max-device-width: 768px)
 {
 	    body {
-		    font-size:		100% !important;
-		    -webkit-text-size-adjust: 100% !important;  
+		    font-size:		150% !important;
+		    /* -webkit-text-size-adjust: 150% !important;  */
 	    }
 	
 	    .iconimg {
-	    	width:		64px !important;
-	    	height:		64px !important;
+	    	width:		3em !important;
+	    	height:		3em !important;
 	    	border:		3px solid dimgray !important;
         } 
         
         .mainbanner {
 		    top:			0 !important;
-		    height:			200px;
+		    height:			200px !important;
         }
         
         .img-responsive {
     		width:		200px !important;
-    		max-width:	200px !important;
+    		max-width:	30% !important;
     		height:		auto !important;
         }
         
         .topbox {
     		 width:			100vw;
-		 height:		34px;
+		 height:		2.3em;
 		 position:		sticky !important;
 	    	 position:		-webkit-sticky !important;
 	}
 	
 	.mobilemenubuttonimg {
 		margin:			0 !important;
-		height:			34px !important;
-		width:			34px !important;
+		height:			1.6em !important;
+		width:			1.6em !important;
 	}
 }
 
+@media all and (max-device-width: 768px)
+{
 body {
 	font-family: 		"Verdana" !important;
 	height:			100vh !important;
@@ -109,6 +111,8 @@ body {
 }
 
 .mainbanner {
+	width:			100vw !important;
+	min-height:		25px !important;
 	border-radius:		0 !important;
 	shadow:			none !important;
 }
@@ -164,7 +168,7 @@ body {
 	    left:			0;
 	    max-height:			100vh;
 	    margin: 			0;
-	    padding:			2px;
+	    padding:			0.1em;
 	    transition:			height .3s ease-in-out;
 	    -webkit-transition: 	height .3s ease-in-out;
 	    font-size:			1em;
@@ -235,4 +239,4 @@ h3 ~ *:not(h3) {
 	margin-left:		0 !important;
 }
 
-
+}

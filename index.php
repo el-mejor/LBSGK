@@ -1,5 +1,5 @@
 <!-- 
-LBSGK Template made for www.sg-kornburg.de V0.97
+LBSGK Template made for www.sg-kornburg.de V0.981
 
 Adapt the images of the banner rotation in banner_change.js.
 
@@ -54,8 +54,8 @@ if(!defined('WB_URL')) {
 	<head>
 		<title><?php page_title(); ?></title>
 		<meta http-equiv="Content-Type" content="text/html; charset=<?php if(defined('DEFAULT_CHARSET')) { echo DEFAULT_CHARSET; } else { echo 'utf-8'; }?>" />
-
-		<link media="screen and (max-width: 1024px)" href="<?php echo TEMPLATE_DIR; ?>/mobilestyle.css" rel="stylesheet" type="text/css" />
+		
+		<link href="<?php echo TEMPLATE_DIR; ?>/mobilestyle.css" rel="stylesheet" type="text/css" />
 		<link href="<?php echo TEMPLATE_DIR; ?>/style.css" rel="stylesheet" type="text/css" />
 
 		<meta name="description" content="<?php page_description(); ?>" />
