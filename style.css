@@ -21,34 +21,32 @@ td{
 		font-size:			90%;	
 		min-height:			100vh;		
 		background:			linear-gradient(#99c68e, #6CBB3C);
-		
-
-
 	}
 	
 	.topbox {display:none;}	
+	
+	.mobilonly {display:none;}
+
 }
 
 /* diplay last div block of each page in second column when view width is larger than 1600px */
-@media all and (min-width: 1600px)
+@media all and (min-width: 1400px)
 {		
 	div.section:last-of-type {
 		position:	absolute !important;
 		top:		20px;
 		right:		20px;
-		width:		30% !important;
-		float:		right !important;
-		
+		width:		33% !important;
+		float:		right !important;				
 	}
 	
 	div.section {
 		position:	relative;
-		width:		65%;
-		/*float:		left;*/
+		width:		60%;
 	}
 	
 	.m_news {
-		width:		65%;
+		width:		54% !important;
 	}
 }
 
@@ -216,12 +214,12 @@ hmain1, hmain2 {
 
 .contentbox {
 	position:			relative;
-	margin-top:			10px;
+	margin-top:			20px;
 	margin-left:			230px;
 	margin-right:			20px;
 	min-height:			80vh;
 	font-size:			1em;
-	background-color:		white;	
+	/*background-color:		white;	*/
 	border-radius:			5px 5px;
 	padding:			20px;
 	/*box-shadow:			0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
@@ -237,6 +235,7 @@ hmain1, hmain2 {
 }
 .footerbox h3 {
 	text-shadow: none !important;
+	border: none !important;
 	color:	black !important;
 }
 
@@ -256,7 +255,7 @@ img {
 }
 
 .img-responsive:hover {
-	transform:		scale(1.5);
+	transform:		scale(1.2);
 }
 
 .startpageimgs {
@@ -269,9 +268,8 @@ img {
 
 
 .advimg {
-	/*border:			0;*/
-	max-width:		80% !important;
-	height:			auto;
+	width:			auto;
+	height:			90px;
 }
 
 .iconimg {
@@ -330,18 +328,22 @@ blockquote.bqwarn {
 
 
 h1, h2, h3 {
-	background:		inherit;
+	/*background:		inherit;*/
 	font-weight:		bold;
-	color:			#199928;
+	color:			dimgray; /*#199928;*/
 	text-transform: 	uppercase;
 	text-shadow: 		2px 2px 2px lightgray;
+	padding:		3px;
+	
+	
 }
 
 h1 {
-	font-size:		2em;						
+	font-size:		2em;			
 }	
 
 h2 {	
+	/*border-bottom:		1px solid #199928;	*/
 	font-size:		1.5em;
 }
 
@@ -350,11 +352,16 @@ h2 ~ *:not(h2) {
 }
 
 h3 {
+	/*border-bottom:		1px solid #199928;*/
 	font-size:		1.2em;		
 }
 
 h3 ~ *:not(h3) {
 	/*margin-left:		50px;*/
+}
+
+p {
+	text-align: justify;
 }
 
 a {
@@ -414,9 +421,9 @@ a:hover {
 }
 
 .menu-item:hover {
-	color:			#199928 !important;
+	color:			dimgray !important;
 }
 
 .menu-current:hover {
-	color:			#199928 !important;
+	color:			dimgray !important;
 }

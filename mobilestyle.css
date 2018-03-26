@@ -26,8 +26,7 @@ Copyright (c) 2017 Lars Becker (lars@lars-b.net)
         }
         
         .img-responsive {
-    		width:		300px !important;
-    		max-width:	30% !important;
+    		width:		30% !important;
     		height:		auto !important;
         }
         
@@ -64,8 +63,7 @@ Copyright (c) 2017 Lars Becker (lars@lars-b.net)
         }
         
         .img-responsive {
-    		width:		200px !important;
-    		max-width:	30% !important;
+    		width:		30% !important;
     		height:		auto !important;
         }
         
@@ -155,6 +153,11 @@ body {
 	opacity: 	1.5;
 }
 
+.advimg {
+	width:			auto !important;
+	height:			180px !important;
+}
+
 .menubox {display:none;}
 .infobox {display:none;}
 
@@ -163,14 +166,14 @@ body {
 	    z-index:			1001;
 	    top:			0 !important;
 	    display:			block !important;	    
-	    opacity:			0.8;
+	    opacity:			1.0;
 	    overflow:			hidden;
 	    left:			0;
 	    max-height:			100vh;
 	    margin: 			0;
 	    padding:			0.1em;
-	    transition:			height .3s ease-in-out;
-	    -webkit-transition: 	height .3s ease-in-out;
+	    /*transition:			height .3s ease-in-out;
+	    -webkit-transition: 	height .3s ease-in-out;*/
 	    font-size:			1em;
 	    background-color:		Black;
 	    color:			White;

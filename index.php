@@ -1,5 +1,5 @@
 <!-- 
-LBSGK Template made for www.sg-kornburg.de V0.981
+LBSGK Template made for www.sg-kornburg.de V0.987
 
 Adapt the images of the banner rotation in banner_change.js.
 
@@ -64,25 +64,6 @@ if(!defined('WB_URL')) {
 		<link href="<?php echo WB_URL;?>/modules/event/frontend.css" rel="stylesheet"  type="text/css" />
 		<link href="<?php echo WB_URL;?>/modules/news/frontend.css" rel="stylesheet"  type="text/css" />
 		<link rel="shortcut icon" href="<?php echo WB_URL;?>/../favicon.ico" type="image/x-icon">
-
-		<script type="text/javascript">	
-			/* show / hide mobile menu */
-		    	function showmenu() {		    
-			       var e = document.getElementById('mobilemenu');
-			       var bar = document.getElementById('mobilemenubar');
-			       if(e.style.display == 'block') {
-			          e.style.display = 'none';
-			          			  
-			          bar.style.height = 'initial';
-			          bar.style.width = '100vw';		        			          
-			       } else {	
-			          e.style.display = 'block';
-				  
-			          bar.style.height = 'auto';
-			          bar.style.width = '100vw';			          
-			       }
-		    	}
-		</script>
 	</head>
 	<body>
 		<div class="mainframe">
@@ -122,7 +103,7 @@ if(!defined('WB_URL')) {
 			
 			<!-- mobile only menu box -->
 			<div class="topbox" id="mobilemenubar">	
-				<a href="#" class="mobilemenuitem mobilemenu-item" onclick="showmenu()">
+				<a href="#" class="mobilemenuitem mobilemenu-item" id="mobilemenubutton">
 					<img class="mobilemenubuttonimg" src="<?php echo TEMPLATE_DIR; ?>/mobilemenu.png"/>
 				</a>			
 				<div id="mobilemenu" class="mobilemainmenu">
@@ -155,10 +136,6 @@ if(!defined('WB_URL')) {
 						<a href="<?php echo WB_URL;?>/admin/start/index.php" target="_blank">
 							Verwaltung
 						</a>
-						<br/>
-						<a href="<?php echo WB_URL;?>/admin/logout/index.php" target="_top">
-							Logout
-						</a>
 					</p>	
 					</div>			
 				<?php }	?>
@@ -176,8 +153,8 @@ if(!defined('WB_URL')) {
 							<img class="advimg" src="<?php echo WB_URL;?>/media/graphics_sponsoring/perdika.jpg">
 						</a>
 					</p>
-				</div>
-				-->
+				</div> -->
+				
 			</div>			
 			
 			<!-- content box -->
@@ -191,13 +168,33 @@ if(!defined('WB_URL')) {
 			</div>
 		</div>
 
-		<!-- script to hide content when news are shown -->
 		<script type="text/javascript">
+			/* show / hide mobile menu */
+			document.getElementById('mobilemenubutton').addEventListener('click', function(){		    
+			       var e = document.getElementById('mobilemenu');
+			       var bar = document.getElementById('mobilemenubar');
+			       if(e.style.display == 'block') {
+			          e.style.display = 'none';
+			          			  
+			          bar.style.height = 'initial';
+			          bar.style.width = '100vw';		        			          
+			       } else {	
+			          e.style.display = 'block';
+				  
+			          bar.style.height = 'auto';
+			          bar.style.width = '100vw';			          
+			       }
+		    	});
+		
+			/* script to hide content when news are shown */
 			var news = document.getElementsByClassName('post-header');	
 			if (news.length > 0) {			
 				var elements = document.getElementsByClassName('m_wysiwyg');
-				elements[0].classList.toggle('hidesection');
-				elements[2].classList.toggle('hidesection');			
+				for (i = 0; i < elements.length; i++) {
+					if (!elements[i].classList.contains('m_news')) {
+						elements[i].classList.toggle('hidesection');
+					}
+				}
 			}
 		</script>
 		

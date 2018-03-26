@@ -12,7 +12,6 @@ Copyright (c) 2017 Lars Becker (lars@lars-b.net)
 		/* images to show */
 		var images = [
 		    "http://www.sg-kornburg.de/wb2/media/graphics-static-content/bogen_comm.jpg",
-    		    "http://www.sg-kornburg.de/wb2/media/graphics-static-content/schueha_banner.jpg",
     		    "http://www.sg-kornburg.de/wb2/media/graphics-static-content/lg_banner.jpg",
 		    "http://www.sg-kornburg.de/wb2/media/graphics-static-content/boeller_reihe.JPG"
 		];			
