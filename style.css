@@ -214,14 +214,14 @@ hmain1, hmain2 {
 
 .contentbox {
 	position:			relative;
-	margin-top:			20px;
+	margin-top:			10px;
 	margin-left:			230px;
 	margin-right:			20px;
 	min-height:			80vh;
 	font-size:			1em;
 	/*background-color:		white;	*/
 	border-radius:			5px 5px;
-	padding:			20px;
+	padding:			10px;
 	/*box-shadow:			0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
@@ -233,11 +233,6 @@ hmain1, hmain2 {
 	background-color:		lightgray;
 	border-radius:			0 0 10px 10px;
 }
-.footerbox h3 {
-	text-shadow: none !important;
-	border: none !important;
-	color:	black !important;
-}
 
 img {
 	margin:			10px;
@@ -247,10 +242,9 @@ img {
 }
 
 .img-responsive {
-	
-	max-width:		220px;
-	height:			auto;
 
+	height:			auto;
+	width:			25%;
 
 }
 
@@ -269,7 +263,7 @@ img {
 
 .advimg {
 	width:			auto;
-	height:			90px;
+	height:			120px;
 }
 
 .iconimg {
@@ -330,16 +324,20 @@ blockquote.bqwarn {
 h1, h2, h3 {
 	/*background:		inherit;*/
 	font-weight:		bold;
-	color:			dimgray; /*#199928;*/
+	padding-left:		10px !important;
 	text-transform: 	uppercase;
-	text-shadow: 		2px 2px 2px lightgray;
+	/*text-shadow: 		2px 2px 2px lightgray;*/
 	padding:		3px;
-	
+	background:		#99c68e;
+	color:			white;
+	border-radius:		3px;
 	
 }
 
 h1 {
-	font-size:		2em;			
+	font-size:		2em;	
+	background:		gray;
+	color:			white !important;		
 }	
 
 h2 {	
@@ -358,6 +356,14 @@ h3 {
 
 h3 ~ *:not(h3) {
 	/*margin-left:		50px;*/
+}
+
+h4 {
+	color:			black !important;
+	background:		none !important;
+	font-size:		1.3em;
+	font-weight:		bold;
+	text-transform: 	uppercase;
 }
 
 p {

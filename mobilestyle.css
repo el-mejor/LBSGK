@@ -26,7 +26,8 @@ Copyright (c) 2017 Lars Becker (lars@lars-b.net)
         }
         
         .img-responsive {
-    		width:		30% !important;
+        	max-width:	100vw !important;
+    		width:		25vw !important;
     		height:		auto !important;
         }
         
@@ -63,7 +64,8 @@ Copyright (c) 2017 Lars Becker (lars@lars-b.net)
         }
         
         .img-responsive {
-    		width:		30% !important;
+        	max-width:	100vw !important;
+    		width:		25vw !important;
     		height:		auto !important;
         }
         
@@ -92,6 +94,10 @@ body {
 	padding:		0 !important;
 	background:		#ffffff !important;
 	  		
+}
+
+input {
+	font-size:	1.2em;
 }
 
 .mainframe {

@@ -1,5 +1,5 @@
 <!-- 
-LBSGK Template made for www.sg-kornburg.de V0.987
+LBSGK Template made for www.sg-kornburg.de V3.0
 
 Adapt the images of the banner rotation in banner_change.js.
 
@@ -75,7 +75,7 @@ if(!defined('WB_URL')) {
 					<img class="mainbannerbackimg"/>
 					<img class="mainbannerbackimg"/>
 					<div class="mainbannerheaderlogo">
-						<a href="http://newpage.sg-kornburg.de">
+						<a href="http://www.sg-kornburg.de">
 							<img class="mainbannerlogo " src="<?php echo WB_URL;?>/media/graphics_homepage/kornburg.gif" align="left"/>
 						</a>
 					</div>
@@ -86,18 +86,22 @@ if(!defined('WB_URL')) {
 				
 				<!-- website search -->	
 				<div class="mainbannerheaderprev">
-					<!--<small><a class="contactbannerlink" href="[wblink15]">Kontakt</a></small>
-					-->
-					<?php if(SHOW_SEARCH) { ?>
-						<!--<?php echo $TEXT['SEARCH']; ?> -->
-						<form name="search" action="<?php echo WB_URL; ?>/search/index.php" method="get">
-							<input type="hidden" name="referrer" value="<?php
-								echo defined('REFERRER_ID') ? REFERRER_ID : PAGE_ID; ?>" />
-							<input type="text" name="string" style="width: 100px;" />
-							<input type="submit" name="submit" value="<?php echo $TEXT['SEARCH']; ?>" style="width: 50px;" />
-						</form>
-					<?php } ?>
-					
+					<div style="border-bottom:1px solid gray;padding-bottom:2px;">
+						<?php if(SHOW_SEARCH) { ?>
+							<!--<?php echo $TEXT['SEARCH']; ?> -->						
+								<form name="search" action="<?php echo WB_URL; ?>/search/index.php" method="get">
+									<input type="hidden" name="referrer" value="<?php
+										echo defined('REFERRER_ID') ? REFERRER_ID : PAGE_ID; ?>" />
+									<input type="text" name="string" style="width: 100px;" />
+									<input type="submit" name="submit" value="<?php echo $TEXT['SEARCH']; ?>" style="width: 50px;" />
+								</form>						
+						<?php } ?>
+						</div>
+					<p style="text-align:right;margin:0;padding:0;font-size:0.9em;">
+						<a class="contactbannerlink" href="[wblink15]">
+							<span>Kontakt</span>
+						</a>
+					</p>
 				</div>
 			</div>
 			
@@ -108,6 +112,17 @@ if(!defined('WB_URL')) {
 				</a>			
 				<div id="mobilemenu" class="mobilemainmenu">
 					<?php show_menu2(1, SM2_ROOT, SM2_CURR+0, '','<span class="mlevmobile[level]"><a href="[url]" class="mobilemenuitem mobile[class]">[menu_title]</a></span><br/> ','','','');	 ?>				
+					<?php if(SHOW_SEARCH) { ?>
+						<!--<?php echo $TEXT['SEARCH']; ?> -->						
+						<span>
+							<form name="search" action="<?php echo WB_URL; ?>/search/index.php" method="get">
+								<input type="hidden" name="referrer" value="<?php
+									echo defined('REFERRER_ID') ? REFERRER_ID : PAGE_ID; ?>" />
+								<input type="text" name="string" style="width: 60%;" />
+								<input type="submit" name="submit" value="<?php echo $TEXT['SEARCH']; ?>" style="width: 30%;" />
+							</form>						
+						</span>
+					<?php } ?>
 				</div>
 			</div>
 			
@@ -139,28 +154,13 @@ if(!defined('WB_URL')) {
 					</p>	
 					</div>			
 				<?php }	?>
-								
-				<!-- info box commercials -->
-				<!-- remove this box if you dont have anything to display or add your own content -->
-				<!-- adapt links and images for your own project! -->
-				<!-- <div id="werbung" class="infobox">				
-					<p align="center">
-						<a href="[wblink24]">
-							<img class="advimg" src="<?php echo WB_URL;?>/media/graphics_sponsoring/reifen_kfz.jpg">
-						</a>
-	
-						<a href="http://www.perdika-reisen.de" target="_blank">
-							<img class="advimg" src="<?php echo WB_URL;?>/media/graphics_sponsoring/perdika.jpg">
-						</a>
-					</p>
-				</div> -->
-				
 			</div>			
 			
 			<!-- content box -->
 			<div class="contentbox">
-				<?php page_content(1); ?>
+				<?php page_content(1); ?>				
 			</div>
+			
 	
 			<!-- footer -->
 			<div class="footerbox">
