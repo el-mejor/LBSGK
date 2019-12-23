@@ -11,9 +11,10 @@ Copyright (c) 2017 Lars Becker (lars@lars-b.net)
 		/* Paramters */
 		/* images to show */
 		var images = [
-		    "http://www.sg-kornburg.de/wb2/media/graphics-static-content/bogen_comm.jpg",
-    		    "http://www.sg-kornburg.de/wb2/media/graphics-static-content/lg_banner.jpg",
-		    "http://www.sg-kornburg.de/wb2/media/graphics-static-content/boeller_reihe.JPG"
+		    "https://www.sg-kornburg.de/wb2/media/graphics-static-content/bogen_comm.jpg",		    
+		    "https://www.sg-kornburg.de/wb2/media/graphics-static-content/boeller_reihe_salut_2.JPG",
+    		    "https://www.sg-kornburg.de/wb2/media/graphics-static-content/SIZ_banner.JPG",
+		    "https://www.sg-kornburg.de/wb2/media/graphics-static-content/scheiben_banner.JPG"
 		];			
 
 		/* random sequence */
@@ -23,7 +24,7 @@ Copyright (c) 2017 Lars Becker (lars@lars-b.net)
 		var randomStartImg = true;
 		
 		/* Time to show next image */
-		var rotationInterval = 	10000;
+		var rotationInterval = 	12000;
 		
 		/* time to crossfade the images (given in the css!) */ 
 		var transitionTime = 3000; 
