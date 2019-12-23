@@ -1,0 +1,4 @@
+.footerbox::after {    
+    content: "Design & Realisierung Lars Becker - LBSGK V3.5"; 
+    font-size: 0.7em;    
+}
