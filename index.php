@@ -66,8 +66,7 @@ if(!defined('WB_URL')) {
 		<link rel="shortcut icon" href="<?php echo WB_URL;?>/../favicon.ico" type="image/x-icon">
 	</head>
 	<body>
-		<!-- cookie dingsbums -->
-		
+		<!-- cookie dingsbums -->		
 		<div id="cookiedingsbums" class="cookiedingsbums">
 			<div>
 				  <div class="cookiedingsbumsText">
@@ -81,8 +80,8 @@ if(!defined('WB_URL')) {
 				  </div>
 			</div>  
 		</div>
-		<script>	
-			 document.getElementById('cookiedingsbumsAcceptCookies').addEventListener('click', function() {
+		<script> 
+            document.getElementById('cookiedingsbumsAcceptCookies').addEventListener('click', function() {
 			 	var now = new Date();
 				now.setTime(now.getTime() + 28 * 24 * 3600 * 1000);
 			 	document.cookie = 'hidecookiedingsbums=1; expires=' + now.toUTCString() + '; path=/';
