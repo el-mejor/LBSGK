@@ -44,10 +44,10 @@ IN THE SOFTWARE.
 
 <!-- prevent from loading empty -->
 <?php
-if(!defined('WB_URL')) {
-header('Location: ../index.php');
-exit(0);
-}
+    if(!defined('WB_URL')) {
+        header('Location: ../index.php');
+        exit(0);
+    }
 ?>
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -57,6 +57,7 @@ exit(0);
 
         <link id="mobilestylelink" href="<?php echo TEMPLATE_DIR; ?>/mobilestyle.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo TEMPLATE_DIR; ?>/style.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo TEMPLATE_DIR; ?>/currvers.css" rel="stylesheet" type="text/css" />
 
         <meta name="description" content="<?php page_description(); ?>" />
         <meta name="keywords" content="<?php page_keywords(); ?>" />	
@@ -222,7 +223,7 @@ exit(0);
 
         <!-- footer -->						
         <?php page_footer(); ?>
-
+		
         <!-- script to switch between mobile and desktop view -->
         <script>
             document.getElementById('switchmobile').addEventListener('click', function() {
