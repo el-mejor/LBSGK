@@ -198,7 +198,7 @@ input {
 .mainbanner {	
 	min-height:		25px !important;
 	border-radius:		0 !important;
-	shadow:			none !important;
+	box-shadow:			none !important;
 }
 
 .mainbannerbackimg {
