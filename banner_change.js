@@ -8,26 +8,28 @@ https://github.com/el-mejor/LBSGK
 Copyright (c) 2017 Lars Becker (lars@lars-b.net)
 */
 
-		/* Paramters */
-		/* images to show */
-		var images = [
-		    "https://www.sg-kornburg.de/wb2/media/graphics-static-content/bogen_comm.jpg",		    
-		    "https://www.sg-kornburg.de/wb2/media/graphics-static-content/boeller_reihe_salut_2.JPG",
-            "https://www.sg-kornburg.de/wb2/media/graphics-static-content/SIZ_banner.JPG",
-		    "https://www.sg-kornburg.de/wb2/media/graphics-static-content/scheiben_banner.JPG"
-		];			
+/* ----------- Paramters ---------- */
+/* images to show */
+var images = [
+    "https://www.sg-kornburg.de/wb2/media/graphics-static-content/bogen_comm.jpg",		    
+    "https://www.sg-kornburg.de/wb2/media/graphics-static-content/boeller_reihe_salut_2.JPG",
+    "https://www.sg-kornburg.de/wb2/media/graphics-static-content/SIZ_banner.JPG",
+    "https://www.sg-kornburg.de/wb2/media/graphics-static-content/scheiben_banner.JPG"
+];			
 
-		/* random sequence */
-		var random = false;
-		
-		/* choose initial image randomly or use 1st one */
-		var randomStartImg = true;
-		
-		/* Time to show next image */
-		var rotationInterval = 	12000;
-		
-		/* time to crossfade the images (given in the css!) */ 
-		var transitionTime = 3000; 
+/* random sequence */
+var random = false;
+
+/* choose initial image randomly or use 1st one */
+var randomStartImg = true;
+
+/* Time to show next image */
+var rotationInterval = 	12000;
+
+/* time to crossfade the images (given in the css!) */ 
+var transitionTime = 3000; 
+
+/* -------------------------------- */
 
 var imgidx = 0;
 var rotation = false;

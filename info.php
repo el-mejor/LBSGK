@@ -3,7 +3,7 @@
 
 $template_directory = 'lbsgk';
 $template_name = 'LBSGK';
-$template_version = '3.5';
+$template_version = '3.5.1';
 $template_platform = '2.10.x';
 $template_author = 'Lars Becker';
 $template_license = 'GPL';
