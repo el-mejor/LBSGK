@@ -70,6 +70,7 @@ IN THE SOFTWARE.
     </head>
     <body>
         <!-- cookie dingsbums -->		
+        <link href="<?php echo TEMPLATE_DIR; ?>/cookiehint.css" rel="stylesheet" type="text/css" />
         <div id="cookiedingsbums" class="cookiedingsbums">
             <div>
                 <div class="cookiedingsbumsText">
@@ -85,7 +86,8 @@ IN THE SOFTWARE.
             </div>  
         </div>
         <script src="<?php echo TEMPLATE_DIR; ?>/cookiehint.js"></script>
-            
+        
+        <!-- swimming logo -->
         <div class="swimlogocontainer" id="swimlogo">
             <div class="mainlogotria notmobile" id="mainlogotria">
             </div>
