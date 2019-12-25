@@ -1,8 +1,8 @@
 <?php
 
-$template_directory = 'lbsgk_V3.5.2fix2';
-$template_name = 'LBSGK_V3.5.2fix2';
-$template_version = '3.5.2fix2';
+$template_directory = 'lbsgk_V3.5.3';
+$template_name = 'LBSGK_V3.5.3';
+$template_version = '3.5.3';
 $template_platform = '2.10.x';
 $template_author = 'Lars Becker';
 $template_license = 'MIT';
