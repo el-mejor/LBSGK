@@ -1,4 +1,12 @@
+/*
+This file is part of the LBSGK Template
+
+https://github.com/el-mejor/LBSGK
+
+Copyright (c) 2019 Lars Becker (lars@lars-b.net)
+*/
+
 .footerbox::after {    
-    content: "Design & Realisierung Lars Becker - LBSGK V3.5.1"; 
+    content: "Design & Realisierung Lars Becker - LBSGK V3.5.2"; 
     font-size: 0.7em;    
 }

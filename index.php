@@ -1,7 +1,5 @@
 <!-- 
-LBSGK Template made for www.sg-kornburg.de V3.1
-
-Adapt the images of the banner rotation in banner_change.js.
+LBSGK Template made for www.sg-kornburg.de
 
 https://github.com/el-mejor/LBSGK
 
@@ -16,8 +14,12 @@ Necessary files:
 index.php
 style.css
 mobilestyle.css
+currvers.css
 mobilemenu.png
 banner_change.js
+switchmobileview.js
+appearancehelpers.js
+cookiehint.js
 
 -----------------
 
@@ -68,6 +70,7 @@ IN THE SOFTWARE.
     </head>
     <body>
         <!-- cookie dingsbums -->		
+        <link href="<?php echo TEMPLATE_DIR; ?>/cookiehint.css" rel="stylesheet" type="text/css" />
         <div id="cookiedingsbums" class="cookiedingsbums">
             <div>
                 <div class="cookiedingsbumsText">
@@ -82,24 +85,9 @@ IN THE SOFTWARE.
                 </div>
             </div>  
         </div>
-        <script> 
-            document.getElementById('cookiedingsbumsAcceptCookies').addEventListener('click', function() {
-            var now = new Date();
-            now.setTime(now.getTime() + 28 * 24 * 3600 * 1000);
-            document.cookie = 'hidecookiedingsbums=1; expires=' + now.toUTCString() + '; path=/';
-            document.getElementById('cookiedingsbums').style.display = 'none';
-            });
-
-            if(document.cookie.indexOf('hidecookiedingsbums=1') != -1){
-
-            document.getElementById('cookiedingsbums').style.display = 'none';
-            }
-            else{	
-            document.getElementById('cookiedingsbumsCloser').style.display = 'block';
-            }
-        </script>
-
-
+        <script src="<?php echo TEMPLATE_DIR; ?>/cookiehint.js"></script>
+        
+        <!-- swimming logo -->
         <div class="swimlogocontainer" id="swimlogo">
             <div class="mainlogotria notmobile" id="mainlogotria">
             </div>
@@ -148,7 +136,7 @@ IN THE SOFTWARE.
         <!-- mobile only menu box -->
         <div class="topbox" id="mobilemenubar">	
             <a href="#" class="mobilemenuitem mobilemenu-item" id="mobilemenubutton">
-                <img class="mobilemenubuttonimg" src="<?php echo TEMPLATE_DIR; ?>/mobilemenu.png"/>
+                <img class="mobilemenubuttonimg" src="<?php echo TEMPLATE_DIR; ?>/graphics/mobilemenu.png"/>
             </a>			
             <div id="mobilemenu" class="mobilemainmenu">
                 <?php show_menu2(1, SM2_ROOT, SM2_CURR+0, '','<span class="mlevmobile[level]"><a href="[url]" class="mobilemenuitem mobile[class]">[menu_title]</a></span><br/> ','','','');	 ?>				
@@ -213,7 +201,7 @@ IN THE SOFTWARE.
                 <?php page_content(1); ?>	
             </div>
 
-                <!-- unesco -->	
+            <!-- unesco -->	
             <p class="mobilonly" style="text-align:center;">
                 <a href="https://www.unesco.de/kultur-und-natur/immaterielles-kulturerbe/immaterielles-kulturerbe-deutschland/bundesweites-30" target="_blank">
                 <img class="advimg unesco" style="padding:15px;box-shadow:none;border:none;" src="<?php echo WB_URL;?>/media/graphics-static-content/IK_logo_cmyk.jpg"/>
@@ -221,87 +209,40 @@ IN THE SOFTWARE.
             </p>
         </div>		
 
-        <!-- footer -->						
+        <!-- insert footer -->						
         <?php page_footer(); ?>
 		
         <!-- script to switch between mobile and desktop view -->
+        <script src="<?php echo TEMPLATE_DIR; ?>/switchmobileview.js"></script>          
+        
+        <!-- design and function helpers -->
+        <script src="<?php echo TEMPLATE_DIR; ?>/appearancehelpers.js"></script>
+        
+        <!-- script to rotate banner image -->	
+        <script src="<?php echo TEMPLATE_DIR; ?>/banner_change.js"></script>
+        <!-- config and start banner rotation -->	
         <script>
-            document.getElementById('switchmobile').addEventListener('click', function() {
-                document.cookie = 'forceDesktopView=1;expires=Thu, 01 Jan 1970 00:00:01 GMT;path=/';
-                showMobile();
-            });
-
-            document.getElementById('switchdesktop').addEventListener('click', function() {
-                document.cookie = 'forceDesktopView=1;path=/';
-                showDesktop();
-            });
-
-            if(document.cookie.indexOf('forceDesktopView=1') != -1) {
-                showDesktop();
-            } else {
-                showMobile();
-            }
-
-            function showMobile() {
-                document.getElementById('mobilestylelink').setAttribute('href', '<?php echo TEMPLATE_DIR; ?>/mobilestyle.css');
-                document.getElementById('switchmobile').style.display = 'none';			
-            }
-
-            function showDesktop() {
-                document.getElementById('mobilestylelink').setAttribute('href', '<?php echo TEMPLATE_DIR; ?>/empty.css');			
-                document.getElementById('switchdesktop').style.display = 'none';
-                document.getElementById('switchmobile').style.display = 'block';
-            }
-        </script>
-
-
-        <!-- script to rotate banner image -->		
-        <script async src="<?php echo TEMPLATE_DIR; ?>/banner_change.js"></script>
-
-        <script>
-            /* show / hide mobile menu */
-            document.getElementById('mobilemenubutton').addEventListener('click', function(){		    
-                var e = document.getElementById('mobilemenu');
-                var bar = document.getElementById('mobilemenubar');
-                if(e.style.display == 'block') {
-                    e.style.display = 'none';		          			  
-                    bar.style.height = 'initial';        			          
-                } else {	
-                    e.style.display = 'block';
-                    bar.style.height = 'auto';
-                }
-            });
-
-            /* script to hide content when news are shown */
-            var news = document.getElementsByClassName('post-header');	
-            if (news.length > 0) {			
-                var elements = document.getElementsByClassName('m_wysiwyg');
-                for (i = 0; i < elements.length; i++) {
-                    if (!elements[i].classList.contains('m_news')) {
-                        elements[i].classList.toggle('hidesection');
-                    }
-                }
-            }
-
-            /* script to fade in logo on scrolling */
-            document.getElementsByTagName('body')[0].onscroll = function() {
-                var _h = document.getElementById('mainbanner').clientHeight;
-                var _posh = document.getElementById('mainbanner').getBoundingClientRect().top;
-                var _o = (-_posh - _h) / (50);
-                if ( _o < 0 ) { 
-                    _o = 0; 
-                } 
-                if ( _o > 1.0 ) { 
-                    _o = 1.0; 
-                }
-                document.getElementById('swimlogo').style.opacity = _o;
+            var bannerRotCfg = {
+                "random": false,
+                "randomStartImg": true,
+                "rotationInterval": 12000,
+                "transitionTime": 3000,
+                "images": [
+                    {
+                        "imgurl": "https://www.sg-kornburg.de/wb2/media/graphics-static-content/bogen_comm.jpg"  
+                    },
+                    {
+                        "imgurl": "https://www.sg-kornburg.de/wb2/media/graphics-static-content/boeller_reihe_salut_2.JPG"  
+                    },
+                    {
+                        "imgurl": "https://www.sg-kornburg.de/wb2/media/graphics-static-content/SIZ_banner.JPG" 
+                    },
+                    {
+                        "imgurl": "https://www.sg-kornburg.de/wb2/media/graphics-static-content/scheiben_banner.JPG"  
+                    }                
+                ]            
             };
-
-            /* script to setup animation delay on menu items */
-            var menuitems = document.getElementsByClassName('mlev0');
-            for (i = 0; i < menuitems.length; i++) {
-                menuitems[i].setAttribute("style", "animation-delay:" + (i * 20) + "ms");
-            }
+            StartBannerRot(bannerRotCfg);
         </script>
     </body>
 </html>
