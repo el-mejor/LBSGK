@@ -1,13 +1,12 @@
 <?php
 
-
-$template_directory = 'lbsgk';
-$template_name = 'LBSGK';
-$template_version = '3.5.1';
+$template_directory = 'lbsgk_V3.5.2';
+$template_name = 'LBSGK_V3.5.2';
+$template_version = '3.5.2dev';
 $template_platform = '2.10.x';
 $template_author = 'Lars Becker';
-$template_license = 'GPL';
-$template_description = 'Made for SG Kornburg e.V.';
+$template_license = 'MIT';
+$template_description = 'Made exclusively for www.SG-Kornburg.de';
 
 $block[1]='Main Content';
 $block[2]='Left Bar'; 
