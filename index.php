@@ -197,7 +197,49 @@ IN THE SOFTWARE.
                 <p style='text-align:right;'>
                     <a href="javascript:void(0);" id="switchmobile">Mobile Ansicht</a>
                     <a href="javascript:void(0);" id="switchdesktop">Desktop Ansicht</a>	
-                </p>	
+                </p>
+                <h3 style="background:#c0392b;color:white;">+++ WICHTIG +++</h3>
+
+                <!-- COVID19 HINWEIS -->
+                
+                <table align="center" border="0" cellpadding="10" cellspacing="1" style="width:100%;">
+                <tbody>
+                    <tr>
+                        <td style="background-color: rgb(255,
+                 153,
+                 153);">
+                        <p><strong>Aufgrund aktueller Verordnungen der 
+                        <a href="https://www.bundesregierung.de/breg-de/themen/meseberg/leitlinien-zum-kampf-gegen-die-corona-epidemie-1730942" target="_blank">Bundesregierung</a>&nbsp;sowie der&nbsp; 
+                        <a href="https://www.bayern.de/corona-pandemie-bayern-ruft-den-katastrophenfall-aus-veranstaltungsverbote-und-betriebsuntersagungen/" target="_blank">bayer. Staatsregierung</a>&nbsp;zur Eindämmung des neuartigen Coronaviruses (COVID-19) ist das Schützenhaus bis auf weiteres geschlossen und alle Vereinstätigkeiten ruhen:</strong></p>
+
+                        <ul>
+                        <li><strong>Kein Schankbetrieb</strong></li>
+                        <li><strong>Kein Training auf den Schießständen <u>innen sowie außen</u></strong></li>
+                        <li><strong>Alle Wettkämpfe (RWK) und Meisterschaften sind ausgesetzt</strong></li>
+                        </ul>
+
+                        <p><strong>Sollte es zur Absage oder Verschiebung von 
+                        <a href="[wblink7]">Terminen</a> kommen, erfahren Sie es hier!&nbsp;</strong></p>
+
+                        <p><em>Weitere Informationen zur&nbsp;Absage oder Verschiebung von Wettkämpfen (RWK), Meisterschaften und sonstigen Terminen und Veranstaltungen auf Verbandsebene&nbsp;erhalten Sie bei den entsprechenden Verbänden:</em></p>
+
+                        <ul>
+                        <li><em>Gau Schwabach-Roth-Hilpoltstein ( 
+                        <a href="http://www.schuetzengau-schwabach-roth-hilpoltstein.de/" target="_blank">http://www.schuetzengau-schwabach-roth-hilpoltstein.de/</a>)</em></li>
+                        <li><em>Mittelfränkischer Schützenbund ( 
+                        <a href="http://www.bgv.bssb.de/msb/index.html" target="_blank">http://www.bgv.bssb.de/msb/index.html</a>)</em></li>
+                        <li><em>Bayerischer Sportschützenbund ( 
+                        <a href="http://www.bssb.de" target="_blank">http://www.bssb.de</a>)</em></li>
+                        </ul>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+
+                <p>&nbsp;</p>
+
+                <!-- ENDE HINWEIS -->
+                
                 <?php page_content(1); ?>	
             </div>
 
