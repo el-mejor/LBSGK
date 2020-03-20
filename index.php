@@ -208,13 +208,14 @@ IN THE SOFTWARE.
                         <td style="background-color: rgb(255,
                  153,
                  153);">
+                        <p><strong><u>Seit dem 17.03.2020 gilt:</u></strong></p>
                         <p><strong>Aufgrund aktueller Verordnungen der 
                         <a href="https://www.bundesregierung.de/breg-de/themen/meseberg/leitlinien-zum-kampf-gegen-die-corona-epidemie-1730942" target="_blank">Bundesregierung</a>&nbsp;sowie der&nbsp; 
-                        <a href="https://www.bayern.de/corona-pandemie-bayern-ruft-den-katastrophenfall-aus-veranstaltungsverbote-und-betriebsuntersagungen/" target="_blank">bayer. Staatsregierung</a>&nbsp;zur Eindämmung des neuartigen Coronaviruses (COVID-19) ist das Schützenhaus bis auf weiteres geschlossen und alle Vereinstätigkeiten ruhen:</strong></p>
+                        <a href="https://www.bayern.de/corona-pandemie-bayern-ruft-den-katastrophenfall-aus-veranstaltungsverbote-und-betriebsuntersagungen/" target="_blank">bayer. Staatsregierung</a>&nbsp;zur Eindämmung des neuartigen Coronaviruses (COVID-19) ist das Schützenhaus bis auf weiteres geschlossen und alle Vereinsaktivitäten ruhen:</strong></p>
 
                         <ul>
                         <li><strong>Kein Schankbetrieb</strong></li>
-                        <li><strong>Kein Training auf den Schießständen <u>innen sowie außen</u></strong></li>
+                        <li><strong>Kein Betrieb auf den Schießständen <u>innen sowie außen</u></strong></li>
                         <li><strong>Alle Wettkämpfe (RWK) und Meisterschaften sind ausgesetzt</strong></li>
                         </ul>
 
