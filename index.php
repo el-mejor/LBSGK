@@ -200,21 +200,43 @@ IN THE SOFTWARE.
                 </p>
                 
                 <!-- COVID19 HINWEIS -->                
-                
-                <div style="border: 5px solid red; border-left: 5px solid red; border-radius: 3px; padding: 20px; background-color: rgb(210, 210, 210);">                          
-                    <p><strong>Aufgrund aktueller Verordnungen der bayer. Staatsregierung zur Eindämmung des neuartigen Coronaviruses (COVID-19) ist das Schützenhaus bis auf weiteres geschlossen und alle Vereinsaktivitäten ruhen:</strong></p>
-
-                    <ul>
-                        <li><strong>Kein Schankbetrieb</strong></li>                        
-                        <li><strong>Kein Betrieb auf den Schießständen innen sowie außen</strong></li>
-                        <li><strong>Alle Wettkämpfe (RWK) und Meisterschaften sind ausgesetzt</strong></li>
-                    </ul>
-
-                    <p><strong>Die getroffenen Maßnahmen gelten mindestens bis zum 19.04.2020 (Stand 30.03.2020). Folgende <a href="[wblink7]">Termine</a> sind betroffen:</strong></p>
+                <style>
+                    .covidBox {
+                        border: 5px solid red; 
+                        border-left: 5px solid red; 
+                        border-radius: 3px; 
+                        padding: 20px; 
+                        background-color: rgb(210, 210, 210);
+                    }
                     
+                    .covidTableCell {
+                        font-weight: bold;
+                        padding-right: 5em;
+                    }
+                </style>
+                <div class="covidBox">                      
+                    <p><strong>Aufgrund der aktuellen Verordnungen der bayer. Staatsregierung zur Eindämmung des neuartigen Coronaviruses (COVID-19) ist das Schützenhaus bis auf weiteres geschlossen und alle Vereinsaktivitäten ruhen:</strong></p>
+
                     <ul>
-                        <li><strong>04.04.2020 - Frühjahrsarbeitsdienst - abgesagt</strong></li>                        
+                        <li>Kein Schankbetrieb</li>                        
+                        <li>Kein Betrieb auf den Schießständen innen sowie außen</li>
+                        <li>Alle Wettkämpfe (RWK) und Meisterschaften sind ausgesetzt</li>
                     </ul>
+
+                    <p><strong>Folgende <a href="[wblink7]">Termine</a> sind betroffen (Stand 30.03.2020):</strong></p>
+                    
+                    <table>
+                        <tr>
+                            <td class="covidTableCell">04.04.2020</td>
+                            <td class="covidTableCell">Frühjahrsarbeitsdienst</td>
+                            <td class="covidTableCell">abgesagt</td>
+                        </tr>
+                        <tr>
+                            <td class="covidTableCell">11.04.2020</td>
+                            <td class="covidTableCell">Böllern zur Eröffnung des Frühlingsfests</td>
+                            <td class="covidTableCell">abgesagt</td>
+                        </tr>
+                    </table>            
 
                     <p><em>Weitere Informationen zur&nbsp;Absage oder Verschiebung von Wettkämpfen (RWK), Meisterschaften und sonstigen Terminen und Veranstaltungen auf Verbandsebene&nbsp;erhalten Sie bei den entsprechenden Verbänden (s.u.)</em></p>
                 </div>
