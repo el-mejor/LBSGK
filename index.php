@@ -209,9 +209,19 @@ IN THE SOFTWARE.
                         background-color: rgb(210, 210, 210);
                     }
                     
-                    .covidTableCell {
-                        font-weight: bold;
-                        padding-right: 5em;
+                    .covidTable {                        
+                        
+                    }
+                    
+                    .covidTableCell {                        
+                        padding-right: 2em;
+                    }
+                    
+                    .coronaDateIcon {
+                        height: 1em;
+                        border: none;
+                        box-shadow: none;                        
+                        vertical-align: middle;
                     }
                 </style>
                 <div class="covidBox">                      
@@ -225,16 +235,38 @@ IN THE SOFTWARE.
 
                     <p><strong>Folgende <a href="[wblink7]">Termine</a> sind betroffen (Stand 30.03.2020):</strong></p>
                     
-                    <table>
+                    <table class="covidTable">                        
                         <tr>
                             <td class="covidTableCell">04.04.2020</td>
                             <td class="covidTableCell">Frühjahrsarbeitsdienst</td>
-                            <td class="covidTableCell">abgesagt</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="covidTableCell"><img class="coronaDateIcon" src="<?php echo TEMPLATE_DIR; ?>/graphics/cancel.gif">abgesagt</td>
                         </tr>
                         <tr>
                             <td class="covidTableCell">11.04.2020</td>
-                            <td class="covidTableCell">Böllern zur Eröffnung des Frühlingsfests</td>
-                            <td class="covidTableCell">abgesagt</td>
+                            <td class="covidTableCell">Böllern Nürnberger Frühlingsfest</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="covidTableCell"><img class="coronaDateIcon" src="<?php echo TEMPLATE_DIR; ?>/graphics/cancel.gif">abgesagt</td>
+                        </tr>
+                        <tr>
+                            <td class="covidTableCell">25.04.2020</td>
+                            <td class="covidTableCell">Böllern Spalter Brauereifest</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="covidTableCell"><img class="coronaDateIcon" src="<?php echo TEMPLATE_DIR; ?>/graphics/cancel.gif">abgesagt</td>
+                        </tr>
+                        <tr>
+                            <td class="covidTableCell">10.05.2020</td>
+                            <td class="covidTableCell">Böllern Festzug Gauschießen Roth</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="covidTableCell"><img class="coronaDateIcon" src="<?php echo TEMPLATE_DIR; ?>/graphics/cancel.gif">abgesagt</td>
                         </tr>
                     </table>            
 
