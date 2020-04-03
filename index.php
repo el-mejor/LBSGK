@@ -273,9 +273,6 @@ IN THE SOFTWARE.
                     <p><em>Weitere Informationen zur&nbsp;Absage oder Verschiebung von Wettkämpfen (RWK), Meisterschaften und sonstigen Terminen und Veranstaltungen auf Verbandsebene&nbsp;erhalten Sie bei den entsprechenden Verbänden (s.u.)</em></p>
                 </div>
                 
-
-                <p>&nbsp;</p>
-
                 <!-- ENDE HINWEIS -->
                 
                 <?php page_content(1); ?>	
