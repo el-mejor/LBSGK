@@ -344,6 +344,11 @@ img {
     border-radius: 20%;
 }
 
+.titleBannerImg {
+    width: 100%;
+    max-width: 700px;
+}
+
 .iconimg {	
     animation-name:	iconfadein;
     animation-duration:	1s;	
