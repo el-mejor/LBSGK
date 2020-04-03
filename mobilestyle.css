@@ -24,6 +24,10 @@ Copyright (c) 2019 Lars Becker (lars@lars-b.net)
         box-shadow: none !important;		
     }
 
+    .titleBannerImg {
+        max-width: 100% !important;
+    }
+    
     .iconimg {
         width: 2em !important;
         height: 2em !important;
