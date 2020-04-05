@@ -199,78 +199,10 @@ IN THE SOFTWARE.
                     <a href="javascript:void(0);" id="switchdesktop">Desktop Ansicht</a>	
                 </p>
                 
-                <!-- COVID19 HINWEIS -->                
-                <style>
-                    .covidBox {
-                        border: 5px solid red; 
-                        border-left: 5px solid red; 
-                        border-radius: 3px; 
-                        padding: 20px; 
-                        background-color: rgb(210, 210, 210);
-                    }
-                    
-                    .covidTable {                        
-                        
-                    }
-                    
-                    .covidTableCell {                        
-                        padding-right: 2em;
-                    }
-                    
-                    .coronaDateIcon {
-                        height: 1em;
-                        border: none;
-                        box-shadow: none;                        
-                        vertical-align: middle;
-                    }
-                </style>
-                <div class="covidBox">                      
-                    <p><strong>Aufgrund der aktuellen Verordnungen der bayer. Staatsregierung zur Eindämmung des neuartigen Coronaviruses (COVID-19) ist das Schützenhaus bis auf weiteres geschlossen und alle Vereinsaktivitäten ruhen:</strong></p>
-
-                    <ul>
-                        <li>Kein Schankbetrieb</li>                        
-                        <li>Kein Betrieb auf den Schießständen innen sowie außen</li>
-                        <li>Alle Wettkämpfe (RWK) und Meisterschaften sind ausgesetzt</li>
-                    </ul>
-
-                    <p><strong>Folgende <a href="[wblink7]">Termine</a> sind betroffen (Stand 30.03.2020):</strong></p>
-                    
-                    <table class="covidTable">                        
-                        <tr>
-                            <td class="covidTableCell">04.04.2020</td>
-                            <td class="covidTableCell">Frühjahrsarbeitsdienst</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td class="covidTableCell"><img class="coronaDateIcon" src="<?php echo TEMPLATE_DIR; ?>/graphics/cancel.gif">abgesagt</td>
-                        </tr>
-                        <tr>
-                            <td class="covidTableCell">11.04.2020</td>
-                            <td class="covidTableCell">Böllern Nürnberger Frühlingsfest</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td class="covidTableCell"><img class="coronaDateIcon" src="<?php echo TEMPLATE_DIR; ?>/graphics/cancel.gif">abgesagt</td>
-                        </tr>
-                        <tr>
-                            <td class="covidTableCell">25.04.2020</td>
-                            <td class="covidTableCell">Böllern Spalter Brauereifest</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td class="covidTableCell"><img class="coronaDateIcon" src="<?php echo TEMPLATE_DIR; ?>/graphics/cancel.gif">abgesagt</td>
-                        </tr>
-                        <tr>
-                            <td class="covidTableCell">10.05.2020</td>
-                            <td class="covidTableCell">Böllern Festzug Gauschießen Roth</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td class="covidTableCell"><img class="coronaDateIcon" src="<?php echo TEMPLATE_DIR; ?>/graphics/cancel.gif">abgesagt</td>
-                        </tr>
-                    </table>            
-
-                    <p><em>Weitere Informationen zur&nbsp;Absage oder Verschiebung von Wettkämpfen (RWK), Meisterschaften und sonstigen Terminen und Veranstaltungen auf Verbandsebene&nbsp;erhalten Sie bei den entsprechenden Verbänden (s.u.)</em></p>
+                <!-- TOP MESSAGE -->                
+               <div class="TopMessageBox">  
+					<!-- enter id of wysiwyg content to show in in droplet -->
+					[[ShowWysiwyg?section=87]]				
                 </div>
                 
                 <!-- ENDE HINWEIS -->
