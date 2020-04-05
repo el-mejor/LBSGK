@@ -197,7 +197,16 @@ IN THE SOFTWARE.
                 <p style='text-align:right;'>
                     <a href="javascript:void(0);" id="switchmobile">Mobile Ansicht</a>
                     <a href="javascript:void(0);" id="switchdesktop">Desktop Ansicht</a>	
-                </p>	
+                </p>
+                
+                <!-- TOP MESSAGE -->                
+               <div class="TopMessageBox">  
+					<!-- enter id of wysiwyg content to show in in droplet -->
+					[[ShowWysiwyg?section=87]]				
+                </div>
+                
+                <!-- ENDE HINWEIS -->
+                
                 <?php page_content(1); ?>	
             </div>
 
