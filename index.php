@@ -199,11 +199,10 @@ IN THE SOFTWARE.
                     <a href="javascript:void(0);" id="switchdesktop">Desktop Ansicht</a>	
                 </p>
                 
-                <!-- TOP MESSAGE -->                
-               <div class="TopMessageBox">  
-					<!-- enter id of wysiwyg content to show in in droplet -->
-					[[ShowWysiwyg?section=87]]				
-                </div>
+                <!-- TOP MESSAGE -->                               
+				<!-- enter id of wysiwyg content to show in in droplet -->
+				[[ShowWysiwyg?section=87]]				
+                
                 
                 <!-- ENDE HINWEIS -->
                 
