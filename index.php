@@ -203,6 +203,7 @@ IN THE SOFTWARE.
 				<!-- enter id of wysiwyg content to show in in droplet -->
 				[[ShowWysiwyg?section=87]]				
                 
+                <!-- page content -->
                 <?php page_content(1); ?>	
             </div>
 
