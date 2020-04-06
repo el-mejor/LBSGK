@@ -337,4 +337,9 @@ Copyright (c) 2019 Lars Becker (lars@lars-b.net)
     .notmobile {
     display: none;
     }
+    
+    .newsArticlePreview {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
 }

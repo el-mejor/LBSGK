@@ -545,3 +545,32 @@ img.map {
 #switchdesktop {
     display: none;
 }
+
+.newsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-content: space-between;
+}
+
+.newsArticlePreview {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 0.5em;
+    margin-bottom: 5px;
+    max-width: 220px;
+    flex-grow: 1;
+}
+
+.newsArticlePreview:hover {
+    
+}
+
+@media all and (max-width: 800px) {
+    .newsArticlePreview {
+        width: 100%;
+        max-width: 100%;
+    }
+}
