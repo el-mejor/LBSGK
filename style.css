@@ -132,6 +132,19 @@ border: 1px dashed lime !important;
     transition: opacity 2.5s ease-in-out;
     opacity: 1;
     z-index: 2000;
+    -webkit-animation: zoomin 120s linear infinite;
+}
+
+@-webkit-keyframes zoomin {
+    0% {
+        -webkit-transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1.0);
+    }
 }
 
 .mainbannerbackimg.hidden {
