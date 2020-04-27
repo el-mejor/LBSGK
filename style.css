@@ -568,7 +568,7 @@ img.map {
     margin: 0.5em;
 }
 
-.newsArticlePreview p:nth-child(1) {
+.newsArticlePreview p:nth-child(1) {    
     margin: 0;
     padding: 2px;
     padding-right: 0.5em;
@@ -576,6 +576,8 @@ img.map {
 }
 
 .newsArticlePreview p:nth-child(2) {
+    text-align: left;
+    font-size: 1em;
     height: 5em;    
 }
 
@@ -585,11 +587,11 @@ img.map {
     background-color: #eee;    
 }
 
-.newsArticlePreview p:nth-child(4) {
+.newsArticlePreview p:nth-last-child(2) {
     margin-bottom: 2.5em;
 }
 
-.newsArticlePreview p:nth-child(5) {
+.newsArticlePreview p:last-of-type {    
     position: absolute;
     bottom: 0;
 }
